@@ -7,17 +7,16 @@
     * TailwindCSS - v3.1.8
 
 #### Local Setup 
-    Local Git Clone
-``` 
-git clone https://github.com/RahulRST/prototype.git
 
-    Package Installation
-```
-```
-cd prototype
-npm install
-```
-    Local Hosting
-```
-npm run dev
-```
+* To locally clone the repository
+
+        git clone https://github.com/RahulRST/prototype.git
+
+* To install the required packages
+
+        cd prototype
+        npm install
+
+* Local Hosting of React App
+
+        npm run dev
