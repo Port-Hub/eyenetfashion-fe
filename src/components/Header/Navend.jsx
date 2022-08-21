@@ -1,10 +1,11 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navend extends Component {
     render() {
         return (
             <div className="navbar-end">
-                <a className="btn btn-sm sm:btn-sm lg:btn-md glass btn-outline btn-primary">Contact Us</a>
+                <Link className="btn btn-sm sm:btn-sm lg:btn-md glass btn-outline btn-primary" to="/contact">Contact</Link>
             </div>
         )
     }

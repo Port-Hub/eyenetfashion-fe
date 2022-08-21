@@ -34,7 +34,7 @@ const childArray = [
     },
     {
         name:"Infrastructure",
-        to:"infra"
+        to:"infrastructure"
     },
     {
         name:"Gallery",
