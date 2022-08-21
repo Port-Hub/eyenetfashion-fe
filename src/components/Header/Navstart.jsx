@@ -1,5 +1,6 @@
-import { Component, useState } from "react";
-import Navlist from "./Navlist.jsx";
+import { Component } from "react";
+import { Link } from "react-router-dom";
+import Navlist from "./Navlist";
 
 class Navstart extends Component {
     render() {
@@ -18,7 +19,7 @@ class Navstart extends Component {
                         <Navlist />
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl" href="#">Eyenet Fashion</a>
+                <Link className="btn btn-ghost normal-case text-xl" to="/">Eyenet Fashion</Link>
             </div>
         )
     }

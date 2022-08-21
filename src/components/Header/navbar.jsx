@@ -5,11 +5,11 @@ import Navend from "./Navend";
 
 const Navbar = () => {
     return (
-    <nav className="navbar bg-base-300">
-      <Navstart />
-      <Navcenter />
-      <Navend />
-    </nav>
+      <nav className="navbar bg-base-300">
+        <Navstart />
+        <Navcenter />
+        <Navend />
+      </nav>
     )
 }
 

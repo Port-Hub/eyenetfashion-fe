@@ -1,9 +1,9 @@
-import { Component } from "react";
+import { Link } from "react-router-dom";
 
 const mapChild = (param) => {
     return (
         param.map((item, index) => (
-        <li key={index}><a>{item}</a></li>
+        <li key={index}><Link to={"/"+ item.to}>{item.name}</Link></li>
             )
         )
     )
@@ -14,7 +14,7 @@ const mapParent = (param) => {
         param.map((item,index) => (
         <li tabIndex="0" key={index}>
             <a>
-                {item.Name}
+                {item.name}
                 {Dropdown}
             </a>
             <ul className="p-2 bg-base-200">
@@ -27,34 +27,87 @@ const mapParent = (param) => {
 }
 
 const Dropdown =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
-const childArray = ["About Us","Infrastructure","Gallery"];
+const childArray = [
+    {
+        name:"About",
+        to:"about"
+    },
+    {
+        name:"Infrastructure",
+        to:"infra"
+    },
+    {
+        name:"Gallery",
+        to:"gallery"
+    }
+    ];
 const parentArray = [
     {
-        Name:"Courses Offered",
-        Array:["Fashion Designing","Computer Education","Multimedia Training","Photography","Spoken English","Beautician Courses"]
+        name:"Courses Offered",
+        Array:[
+            {
+                name:"Fashion Designing",
+                to:"fashion"
+            },
+            {
+                name:"Computer Education",
+                to:"computer"
+            },
+            {
+                name:"Multimedia Training",
+                to:"multimedia"
+            },
+            {
+                name:"Photography",
+                to:"photography"
+            },
+            {
+                name:"Spoken English",
+                to:"spoken"
+            },
+            {
+                name:"Beautician Courses",
+                to:"beautician"
+            }
+        ]
     },
     {
-        Name:"Students Zone",
-        Array:["Portfolio","Roll of Honour"]
+        name:"Students Zone",
+        Array:[
+            {
+                name:"Portfolio",
+                to:"portfolio"
+            },
+            {
+                name:"Roll of Honour",
+                to:"rollofhonour"
+            }
+        ]
     },
     {
-        Name:"News & Events",
-        Array:["Workshops & Seminar","Fashion Events"]
+        name:"News & Events",
+        Array:[
+            {
+                name:"Workshops & Seminar",
+                to:"workshop"
+            },
+            {
+                name:"Fashion Events",
+                to:"events"
+            }
+        ]
     }
 ]
 
-const childList = mapChild(childArray);
-const parentList = mapParent(parentArray);
-
-class Navlist extends Component {
-    render() {
-        return (
-            <>
-                {childList}
-                {parentList}
-            </>
-        )
-    }
+const Navlist = () => {
+    const childList = mapChild(childArray);
+    const parentList = mapParent(parentArray);
+    return (
+        <>
+            {childList}
+            {parentList}
+        </>
+    )
 }
 
 export default Navlist;
