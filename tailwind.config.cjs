@@ -9,16 +9,16 @@ module.exports = {
     // themes: ["fantasy", "forest", "dracula"],
     themes: [
       {
-        protheme: {
-          "primary": "#dc2626",
-          "secondary": "#ea580c",       
-          "accent": "#22d3ee",        
-          "neutral": "#1F1C26",      
-          "base-100": "#1f2937",       
-          "info": "#f0abfc",       
-          "success": "#16a34a",       
-          "warning": "#facc15",      
-          "error": "#be123c",
+        proDark: {
+          "primary": "#eda8c5",
+          "secondary": "#8056c9",
+          "accent": "#e2f49a",
+          "neutral": "#22282A",
+          "base-100": "#283143",
+          "info": "#2AA5D5",
+          "success": "#21B05F",
+          "warning": "#E09E10",
+          "error": "#E61E32",
         },
       },
     ],
