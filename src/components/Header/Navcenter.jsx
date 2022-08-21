@@ -1,5 +1,5 @@
 import { Component } from "react";
-import Navlist from "./Navlist.jsx";
+import Navlist from "./Navlist";
 
 class Navcenter extends Component {
     render() {
