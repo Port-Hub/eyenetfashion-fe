@@ -8,7 +8,16 @@ const mapChild = (param) => {
         )
     )
 }
-
+const mapRoute =(param) =>{
+        return (
+            param.map((item, index,func) => (
+                <Route exact path={"/"+ item.to} element={item.func}></Route>
+            )
+        )
+    )
+}
+export const childRoute =mapRoute(childArray)
+export const parentRoute= mapRoute(parentArray.Array)
 const mapParent = (param) => {
     return (
         param.map((item,index) => (
@@ -30,15 +39,18 @@ const Dropdown =  <svg className="fill-current" xmlns="http://www.w3.org/2000/sv
 const childArray = [
     {
         name:"About",
-        to:"about"
+        to:"about",
+        func:"<About />"
     },
     {
         name:"Infrastructure",
-        to:"infrastructure"
+        to:"infrastructure",
+        func:"<Infra />"
     },
     {
         name:"Gallery",
-        to:"gallery"
+        to:"gallery",
+        func:"<Gallery />"
     }
     ];
 const parentArray = [
@@ -47,27 +59,33 @@ const parentArray = [
         Array:[
             {
                 name:"Fashion Designing",
-                to:"fashion"
+                to:"fashion",
+                func:"<Fashiondes />"
             },
             {
                 name:"Computer Education",
-                to:"computer"
+                to:"computer",
+                func:"<Computer />"
             },
             {
                 name:"Multimedia Training",
-                to:"multimedia"
+                to:"multimedia",
+                func:"<Multimedia />"
             },
             {
                 name:"Photography",
-                to:"photography"
+                to:"photography",
+                func:"<Photography />"
             },
             {
                 name:"Spoken English",
-                to:"spoken"
+                to:"spoken",
+                func:"<Spokenenglish />"
             },
             {
                 name:"Beautician Courses",
-                to:"beautician"
+                to:"beautician",
+                func:"<Beautitician />"
             }
         ]
     },
@@ -76,11 +94,13 @@ const parentArray = [
         Array:[
             {
                 name:"Portfolio",
-                to:"portfolio"
+                to:"portfolio",
+                func:"<Portfolio />"
             },
             {
                 name:"Roll of Honour",
-                to:"rollofhonour"
+                to:"rollofhonour",
+                func:"<Honour />"
             }
         ]
     },
@@ -89,11 +109,13 @@ const parentArray = [
         Array:[
             {
                 name:"Workshops & Seminar",
-                to:"workshop"
+                to:"workshop",
+                func:"<Workshop />"
             },
             {
                 name:"Fashion Events",
-                to:"events"
+                to:"events",
+                func:"<Events />"
             }
         ]
     }

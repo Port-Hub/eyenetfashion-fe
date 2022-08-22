@@ -4,6 +4,7 @@ import Footer from './components/Footer/footer';
 import Home from "./components/Pages/home";
 import About from './components/Pages/about';
 import Infra from './components/Pages/infra';
+import { childRoute,parentRoute } from "./components/Header/Navlist";
 
 const App = () => {
 
