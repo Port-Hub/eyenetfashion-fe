@@ -4,4 +4,4 @@ const Computer = () => {
     )
 }
 
-export default About;
+export default Computer;

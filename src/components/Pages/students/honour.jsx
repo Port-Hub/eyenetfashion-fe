@@ -4,4 +4,4 @@ const Honour = () => {
     )
 }
 
-export default About;
+export default Honour;

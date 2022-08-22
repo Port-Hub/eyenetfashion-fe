@@ -4,4 +4,4 @@ const Photography = () => {
     )
 }
 
-export default About;
+export default Photography;

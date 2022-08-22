@@ -4,4 +4,4 @@ const Workshop = () => {
     )
 }
 
-export default About;
+export default Workshop;

@@ -1,4 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+import About from "../Pages/about";
+import Infra from "../Pages/infra";
+import Gallery from "../Pages/gallery";
+import Beautician from "../Pages/courses/beautician";
+import Computer from "../Pages/courses/computer";
+import Fashion from "../Pages/courses/fashiondes";
+import Multimedia from "../Pages/courses/multimedia";
+import Photography from "../Pages/courses/photography";
+import Spoken from "../Pages/courses/spokeneng";
+import Events from "../Pages/news/events";
+import Workshop from "../Pages/news/workshop";
+import Honour from "../Pages/students/honour";
+import Portfolio from "../Pages/students/portfolio";
 
 const mapChild = (param) => {
     return (
@@ -8,16 +21,15 @@ const mapChild = (param) => {
         )
     )
 }
-const mapRoute =(param) =>{
+const mapRoute = (param) => {
         return (
-            param.map((item, index,func) => (
-                <Route exact path={"/"+ item.to} element={item.func}></Route>
+            param.map((item, index) => (
+                <Route key={index} exact path={"/"+ item.to} element={item.func}></Route>
             )
         )
     )
 }
-export const childRoute =mapRoute(childArray)
-export const parentRoute= mapRoute(parentArray.Array)
+
 const mapParent = (param) => {
     return (
         param.map((item,index) => (
@@ -40,17 +52,17 @@ const childArray = [
     {
         name:"About",
         to:"about",
-        func:"<About />"
+        func:<About />
     },
     {
         name:"Infrastructure",
         to:"infrastructure",
-        func:"<Infra />"
+        func:<Infra />
     },
     {
         name:"Gallery",
         to:"gallery",
-        func:"<Gallery />"
+        func:<Gallery />
     }
     ];
 const parentArray = [
@@ -60,32 +72,32 @@ const parentArray = [
             {
                 name:"Fashion Designing",
                 to:"fashion",
-                func:"<Fashiondes />"
+                func:<Fashion />
             },
             {
                 name:"Computer Education",
                 to:"computer",
-                func:"<Computer />"
+                func:<Computer />
             },
             {
                 name:"Multimedia Training",
                 to:"multimedia",
-                func:"<Multimedia />"
+                func:<Multimedia />
             },
             {
                 name:"Photography",
                 to:"photography",
-                func:"<Photography />"
+                func:<Photography />
             },
             {
                 name:"Spoken English",
                 to:"spoken",
-                func:"<Spokenenglish />"
+                func:<Spoken />
             },
             {
                 name:"Beautician Courses",
                 to:"beautician",
-                func:"<Beautitician />"
+                func:<Beautician />
             }
         ]
     },
@@ -95,12 +107,12 @@ const parentArray = [
             {
                 name:"Portfolio",
                 to:"portfolio",
-                func:"<Portfolio />"
+                func:<Portfolio />
             },
             {
                 name:"Roll of Honour",
                 to:"rollofhonour",
-                func:"<Honour />"
+                func:<Honour />
             }
         ]
     },
@@ -110,16 +122,19 @@ const parentArray = [
             {
                 name:"Workshops & Seminar",
                 to:"workshop",
-                func:"<Workshop />"
+                func:<Workshop />
             },
             {
                 name:"Fashion Events",
                 to:"events",
-                func:"<Events />"
+                func:<Events />
             }
         ]
     }
 ]
+
+export const childRoute =mapRoute(childArray)
+export const parentRoute= parentArray.map((item) => mapRoute(item.Array));
 
 const Navlist = () => {
     const childList = mapChild(childArray);

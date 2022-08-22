@@ -4,4 +4,4 @@ const Multimedia = () => {
     )
 }
 
-export default About;
+export default Multimedia;

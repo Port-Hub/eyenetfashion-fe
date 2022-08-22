@@ -4,4 +4,4 @@ const Gallery = () => {
     )
 }
 
-export default About;
+export default Gallery;

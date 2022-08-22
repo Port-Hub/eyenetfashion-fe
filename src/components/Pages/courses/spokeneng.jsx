@@ -1,7 +1,7 @@
-const Spokenenglish = () => {
+const Spoken = () => {
     return (
-        <h1>Spoken english Course</h1>
+        <h1>Spoken English Course</h1>
     )
 }
 
-export default About;
+export default Spoken;

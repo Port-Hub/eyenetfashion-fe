@@ -4,4 +4,4 @@ const Events = () => {
     )
 }
 
-export default About;
+export default Events;
