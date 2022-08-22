@@ -5,7 +5,7 @@ class Navend extends Component {
     render() {
         return (
             <div className="navbar-end">
-                <Link className="btn btn-sm sm:btn-sm lg:btn-md glass btn-outline btn-primary" to="/contact">Contact</Link>
+                <Link className="btn btn-sm sm:btn-sm lg:btn-md btn-outline btn-primary" to="/contact">Contact</Link>
             </div>
         )
     }
