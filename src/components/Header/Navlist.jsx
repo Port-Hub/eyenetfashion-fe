@@ -38,7 +38,7 @@ const mapParent = (param) => {
                 {item.name}
                 {Dropdown}
             </a>
-            <ul className="p-2 bg-base-200">
+            <ul className="p-2 bg-base-300">
                 {mapChild(item.Array)}
             </ul>
         </li>
@@ -133,7 +133,7 @@ const parentArray = [
     }
 ]
 
-export const childRoute =mapRoute(childArray)
+export const childRoute =mapRoute(childArray);
 export const parentRoute= parentArray.map((item) => mapRoute(item.Array));
 
 const Navlist = () => {
