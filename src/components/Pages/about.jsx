@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div className="text-center xl:m-80 md:m-52 sm:m-32 xs:m-24 space-y-6">
+        <div className="text-center xl:m-60 md:m-32 sm:m-24 m-20 space-y-6">
             <h4>The Concern - A Bird's Eye View...</h4>
             <p>
                 The Eye-net, a renowned Training Center 
