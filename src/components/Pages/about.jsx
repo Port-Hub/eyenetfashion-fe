@@ -1,7 +1,13 @@
+import Left from "../../assets/about/Left.jpg";
+import Right from "../../assets/about/Right.jpg";
+
 const About = () => {
     return (
-        <div className="text-center xl:m-60 md:m-32 sm:m-24 m-20 space-y-6">
+        <>
+            <img src={Left} width="128" height="330"/>
+            
             <h4>The Concern - A Bird's Eye View...</h4>
+
             <p>
                 The Eye-net, a renowned Training Center 
                 (Computer Education - Fashion Technology - Spoken English)
@@ -58,6 +64,7 @@ const About = () => {
             </p>
 
             <h4>Manuals & Booklets</h4>
+
             <p>
                 In order to have smooth administration in the entrees, Institute has 
                 formulated well-structured operational manuals. To streamline the academic 
@@ -66,7 +73,9 @@ const About = () => {
                 knowledge to the people about these courses we have prepared different 
                 prospectus in Computer, Fashion and Communication Skills.
             </p>
-        </div>
+
+            <img src={Right} width="128" height="330"/>
+        </>
     )
 }
 
