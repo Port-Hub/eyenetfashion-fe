@@ -110,12 +110,12 @@ const Fashion = () => {
                 <div>	
                     <h4>Advanced Diploma in Fashion Designing -- Duration 1 year</h4>
 
-                    <span>Objective : </span><br />
+                    <span>Objective : </span>
                     <div>
 
 
                     <div>
-                    <span>Semester 1</span><br />
+                    <span>Semester 1</span>
 
                     <span>Design Ideas </span>
                     <ul>
@@ -167,7 +167,7 @@ const Fashion = () => {
                 </div>
 
                 <div>
-                    <b><span>Semester 2</span></b><br />
+                    <b><span>Semester 2</span></b>
                     <span>Design Ideas </span>
                     <ul>
                         <li> Types of skirts, tops, silhouettes, cuffs etc. and their compositions </li>
@@ -315,7 +315,7 @@ const Fashion = () => {
             <div>	
                 <div>
                     <h4>Diploma in Taloring (Advance) -- Duration </h4>
-                    <span>Tailoring Course</span><br />
+                    <span>Tailoring Course</span>
                     <p>This course is designed to teach the various nuances 
                         of pattern making and Tailoring in a comprehensive 
                         manner. The patterns cater to both standard measurements 
@@ -358,7 +358,7 @@ const Fashion = () => {
                     manner.
                 </p>
                 <div>
-                    <span>Tops</span><br />
+                    <span>Tops</span>
                     <ul>
                         <li>Chudi-basic</li>
                         <li>Chudi with dart</li>
@@ -373,14 +373,14 @@ const Fashion = () => {
                         <li>Panel</li>
                         <li>Magyar type</li>
                     </ul>
-                    <span>Neck Lines</span><br />
+                    <span>Neck Lines</span>
                     <ul>
                         <li>Basic lines</li>
                         <li>Style lines</li>
                     </ul>
                 </div>
                 <div>
-                    <span>Pant</span><br />
+                    <span>Pant</span>
                     <ul>
                         <li>Basic</li>
                         <li>Gathering</li>
@@ -390,7 +390,7 @@ const Fashion = () => {
                         <li>Parallel</li>
                         <li>Palazzo</li>
                     </ul>
-                    <span>Sleeves</span><br />
+                    <span>Sleeves</span>
                     <ul>
                         <li>Basic (3 types)</li>
                         <li>Puff sleeve (3 types)</li>
@@ -415,7 +415,7 @@ const Fashion = () => {
                 how to make a fit as perfect one.
             </p>
             <div>
-                <span>Tops</span><br />
+                <span>Tops</span>
                 <ul>
                     <li>Basic</li>
                     <li>4-dart</li>
@@ -428,14 +428,14 @@ const Fashion = () => {
                 </ul>
             </div>
             <div>
-                <span>Sleeves</span><br />
+                <span>Sleeves</span>
                 <ul>
                     <li>Basic ( 3 types)</li>
                     <li>Puff sleeve ( 3 types)</li>
                     <li>Bell sleeve</li>
                     <li>Petal sleeve</li>
                 </ul>
-                <span>Neck Lines</span><br />
+                <span>Neck Lines</span>
                 <ul>
                     <li>Basic lines</li>
                     <li>Style lines</li>
@@ -445,9 +445,9 @@ const Fashion = () => {
         <b><span>Drafting</span>&Pattern Making</b>
         <div>	
             <div>
-                <h4>Pattern Making -- Duration </h4><br />
+                <h4>Pattern Making -- Duration </h4>
                 <img src="images/pattern-making.jpg" alt="eyenetfashion" />
-                <span>Objective:</span><br />
+                <span>Objective:</span>
                 <div>
                     <p>
                         In this course, students learn to develop basic 
@@ -459,349 +459,337 @@ const Fashion = () => {
                         Specifications are discussed in relation to both pattern 
                         development and finished garment measurements.
                     </p>
-
-Students learn the basic draping methods of developing production patterns for the garment industry.
-<br />
-<br />
-
-<span>Course Contents:</span><br />
-<span>Drafting & Pattern making techniques:</span><br />
-
-<ul>
-<li>Measurement techniques figures.</li>
-<li>Drafting</li>
-<li>Pattern construction.</li>
-<li>Pattern layout scheme for finding out the fabric consumption.</li>
-<li>Construction patterns and layout scheme</li>
-<li>Pattern grading</li>
-<li>Dart manipulation technology </li>
-<li>Dart blending</li>
-<li>Pattern draping on pattern dummy</li>
-</ul>
-</div>
-
-<ul>
-    </ul>
-    <br />
-</div>
-</div>
-
-<b><span>Aari</span> Embroidery</b>
-
-
-<div>
-<div>
-<h4>Aari Embroidery -- Duration 2 Months</h4>
-
-<img src="images/Aari.jpg" alt="eyenetfashion" />
-<span>Objectives</span><br />
-
-
-Aari work has always been considered one of the most tedious forms of needle work.  Today, with the help of advanced stitching procedures and the role of more artisans, it takes lesser time to complete the embroidery work on an outfit.  Training will be given in Round Iron Stand with wooden frame. Kameez Neck Designs, Bridal Blouse Designs including Back neck, Front neck, Sleeves marking for Embroidery and etc.<br />
-<br />
-
-
-
-<div>
-<span>Syllabus</span><br />
-<ul>
-<li>Running Chain</li>
-<li>Zig Zag Chain</li>
-<li>Scroll Chain</li>
-<li>Magic Chain</li>
-<li>Satin Stitch</li>
-<li>Stem Stitch</li>
-<li>Over Casting</li>
-<li>Long & Short</li>
-<li>Leaf Stitch</li>
-<li>Salli Stitch</li>
-<li>Double Salli</li>
-<li>Jigu Jigu work</li>
-<li>Reverse Chain</li>
-</ul>
-<br />
-</div>
-
-<div>
-<span></span><br />
-<ul>
-<li>French knot</li>
-<li>Zardosi</li>
-<li>Paded Zardosi Work</li>
-<li>Chumki Work</li>
-<li>French Knot with Chumki</li>
-<li>Load Work</li>
-<li>Patch Work</li>
-<li>Cut Work</li>
-<li>Bead Work</li>
-<li>Thambur Stitch</li>
-<li>Stone work</li>
-<li>Mirror Work</li>
-<li>Kundan Work</li>
-</ul>
-</div>
-
-
-
-<br />
-<br />
-<div></div>
-</div>
-</div>
-
-
-<div></div>
-<h2>Short Term Courses</h2>
-
-<b><span>Illustration</span></b>
-<div>	
-<div>
-<img src="images/Illustration-1.jpg" alt="eyenetfashion" />
-<h4>Illustration -- Duration </h4>
-
-The role of a fashion illustrator is to make the people aware of the latest trends in fashion. A fashion illustrator does this by means of his or her drawings. He or she works as a link between the fashion industry and the people who are interested in fashion. Fashions illustrations India is a well established service you can avail to get cost effective service.<br />
-<br />
-
-Fashion illustration courses teach students to create images of apparel, shoes and accessories for fashion advertising campaigns, pattern books, catalogs, magazines and other fashion media. Coursework emphasizes artistic skills, such as proportion, color, texture and composition.
-
-
-<br />
-<br />
-
-<span>Course Contents:</span>
-<ul>
-<li>Body Anatomy</li>
-<li>Block Figure</li>
-<li>Stick Figure </li>
-<li>Stylized female Croquis </li>
-<li>Fleshing out the shape</li>
-<li>Different postures, turns & twists for female figures</li>
-<li>Colour Theory</li>
-<li>Uses of colour medium in figures</li>
-<li>Fashion Accessories</li>
-</ul>
-</div>
-</div>
-<b><span>Fabric</span>&nbsp;Paintings</b>
-<div>
-<div>
-<h4>Fabric Paintings -- Duration 2 Months</h4>
-<img src="images/Fabric-painting.jpg" alt="eyenetfashion" />
-<span>Objective:</span><br />
-
-Fabric paint is a type of paint which is specifically designed for use on textiles. It is often used to create custom craft projects, and is also used on a commercial scale to apply patterns and decorations to textiles. Fabric Painting courses teach students to create images through the process of fabric painting, different fabrics such as apparel fabrics or home furnishing fabrics can be given a crafty look. In fact, it can also be used for embellishing finished garments such as t-shirt, pants, jeans, and jackets as also many other products like bags, pillows, or anything made up of fabrics just by adding designs and colors to them. <br />
-<br />
-
-<div>
-<span>Design Ideas</span><br />
-<ul>
-<li>Colour Theory</li>
-<li>Design Developing</li> 
-<li>Basic strokes</li>
-<li>Plain filling work</li>
-<li>Shading work</li>
-<li>Dry Shading</li>
-<li>Tapping method</li>
-<li>Inwards&nbsp;and&nbsp;Outward&nbsp;strokes</li>
-<li>Stencil painting</li>
-</ul>
-
-<br />
-</div>
-
-<div>
-<span>Transferring Ideas</span><br />
-<ul>
-<li>Direct  Method</li>
-<li>Carbon tracing	</li>
-<li>Chalk powder tracing</li>
-</ul>
-<br />
-</div>
-
-<div>
-<span>Type of Medium</span><br />
-<ul>
-<li>Classic Colours</li>
-<li>Pearl Colours</li>
-<li>Silk Colours</li>
-<li>Fabric  Out Liners</li>
-</ul>
-</div>
-</div>
-</div>
-
-<b><span>Embroidery </span>&amp;&nbsp;Hand Works</b>
-<div>	
-<div>
-<h4>Embroidery &amp; Hand Works -- Duration </h4>
-<img src="images/Hand-embroidery.jpg" alt="eyenetfashion" />
-
-<span>Objective:</span><br />
-
-To train the students better way to implement their embroidery talents because the embroidery is a beautiful thread work on a variety of fabrics, which make the fabric more attractive.  Women are the pioneers in creating excellent delicate embroidered garments since ancient times. The taste and requirement for embroidered garments in the modern society is in increasing demand due to the fast changing fashion and their gracious look.  Some of the traditional embroideries need to be popularized and developed into an industrial craft in order to save the reminiscent beauty of the past and ever lasting art. <br />
-<br />
-
-
-<div>
-<h5>Design Ideas</h5>
-<ul>
-<li>Colour Theory</li>
-<li>Design Developing</li> 
-</ul>
-<br />
-
-<h5>Type of Threads</h5>
-<ul>
-<li>Silk thread</li>
-<li>Hand embroidery thread</li>
-<li>Ribbon</li>
-</ul>
-<br />
-<span>Type of Stitches</span>
-<br />
-<h5>Straight Family</h5>
-<ul>
-<li>Running stitch</li>
-<li>Stem stitch</li>
-<li>Double stem stitch</li>
-</ul>
-<br />
-<h5>Round Family</h5>
-<ul>
-<li>Chickenkari</li>
-<li>Eye let</li>
-<li>Spider web</li>
-<li>Back spider web</li>
-<li>Round buttonhole</li>
-<li>Coin stitch</li>
-</ul>
-<br />
-<h5>Crossed Family</h5>
-<ul>
-<li>Cross stitch</li>
-<li>Herringbone</li>
-<li>Double herringbone</li>
-<li>Chevron stitch</li>
-<li>Fly stitch</li>
-<li>Feather stitch</li>
-<li>Vandyke stitch</li>
-<li>Star filling</li>
-</ul>
-<br />
-<h5>Filling</h5>
-<ul>
-<li>Satin stitch</li>
-<li>Encroaching satin</li>
-<li>Long & short filling</li>
-<li>Laid(Darning)</li>
-<li>Chain filling</li>
-<li>Blanket filling</li>
-</ul>
-<br />
-<h5>Indian Embroidery</h5>
-<ul>
-<li>Mirror work</li>
-<li>Shadow work</li>
-<li>Sequence work</li>
-<li>Appliqu&eacute; work</li>
-<li>Net appliqu&eacute;</li>
-<li>Jardhosi & Bead work</li>
-</ul>
-</div>
-
-<div>
-<h5>Transferring Ideas</h5>
-<ul>
-<li>Direct  Method</li>
-<li>Carbon tracing	</li>
-<li>Chalk powder tracing</li>
-</ul>
-<br />
-<h5>Chain Family</h5>
-<ul>
-<li>Simple chain stitch</li>
-<li>Broken chain stitch </li>
-<li>Alternate&nbsp;(magic)chain&nbsp;stitch </li>
-<li>Whipped chain stitch</li>
-<li>Raised chain</li>
-<li>Cable chain</li>
-<li>Open chain</li>
-<li>Zig zag chain</li>
-<li>Splite chain</li>
-<li>Twisted chain</li>
-</ul>
-<br />
-<h5>Blanket Family</h5>
-<ul>
-<li>Blanket stitch</li>
-<li>Long & short blanket stitch</li>
-<li>Group blanket stitch</li>
-<li>Un even blanket </li>
-<li>sequence blanket stitch </li>
-<li>Closed blanket stitch</li>
-<li>Cross blanket stitch </li>
-<li>Button hole stitch</li>
-</ul>
-<br />
-<h5>Whipping and Couching</h5>
-<ul>
-<li>Spiral whipping</li>
-<li>Pekience whipping</li>
-<li>Cross whipping</li>
-<li>Blanket whipping</li>
-<li>Cloud filling</li>
-<li>Simple couching</li>
-<li>Couch Telles</li>
-</ul>
-<br />
-<h5>Knot and Dart Family</h5>
-<ul>
-<li>German knot</li>
-<li>French knot</li>
-<li>Bullion knot</li>
-<li>Lazy-Dazy stitch</li>
-<li>Dot stitch</li>
-<li>Double lazy-dazy</li>
-<li>Roumanian knot</li>
-</ul>
-</div>
-
-</div>
-</div>
-
-<b><span>Jewellery </span> Making</b>
-<div>	
-<div>
-<h4>Jewellery Making -- Duration </h4>
-<img src="images/jewellery-making.jpg" alt="eyenetfashion"/>
-<span>Objective:</span><br />
-
-The course is recommended for anyone who is into the family business of jewelry and wants to sharpen his/her skill or an individual who is interested in joining the business of jewelry, an industry that is seeing a rapid growth in India as well as in the international market. The course offers a launch pad for creative minds to learn new skills and techniques in the highly exciting and creative field of jewelry making.<br />
-<br />
-
-
-
-Costume jewelry is often 'mixed media', meaning that it's made from a combination of different materials such as metal, clay, fabric, plastic etc. Costume jewelry making is accessible to everyone and is a popular and fun hobby. To make your own jewelry means that you can keep up-to-date with fashion trends for much less money, plus you can make accessories that are completely unique to you. If you see a necklace, bracelet or pair of earrings you like in a high street shop then you can use it for inspiration to make your own homemade version.<br />
-<br />
-
-<span>Course Contents</span><br />
-
-<ul>
-<li>Kundan jewelry </li>
-<li>Beaded jewelry</li>
-<li>Paper jewelry </li>
-<li>Paper quilling </li>
-<li>Clay jewelry (Shilpakar)</li>
-<li>Terracotta jewelry</li>
-<li>Ribbon jewelry </li>
-<li>Threaded Ornaments</li>
-</ul>
+                    <p>
+                        Students learn the basic draping methods of developing 
+                        production patterns for the garment industry.
+                    </p>
+                    <span>Course Contents:</span>
+                    <span>Drafting & Pattern making techniques:</span>
+                    <ul>
+                        <li>Measurement techniques figures.</li>
+                        <li>Drafting</li>
+                        <li>Pattern construction.</li>
+                        <li>Pattern layout scheme for finding out the fabric consumption.</li>
+                        <li>Construction patterns and layout scheme</li>
+                        <li>Pattern grading</li>
+                        <li>Dart manipulation technology </li>
+                        <li>Dart blending</li>
+                        <li>Pattern draping on pattern dummy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <b><span>Aari</span> Embroidery</b>
+        <div>
+            <div>
+                <h4>Aari Embroidery -- Duration 2 Months</h4>
+                <img src="images/Aari.jpg" alt="eyenetfashion" />
+                <span>Objectives</span>
+                <p>
+                Aari work has always been considered one of the most tedious 
+                forms of needle work.  Today, with the help of advanced stitching 
+                procedures and the role of more artisans, it takes lesser time to 
+                complete the embroidery work on an outfit.  Training will be given 
+                in Round Iron Stand with wooden frame. Kameez Neck Designs, Bridal 
+                Blouse Designs including Back neck, Front neck, Sleeves marking for 
+                Embroidery and etc.
+            </p>
+            <div>
+                <span>Syllabus</span>
+                <ul>
+                    <li>Running Chain</li>
+                    <li>Zig Zag Chain</li>
+                    <li>Scroll Chain</li>
+                    <li>Magic Chain</li>
+                    <li>Satin Stitch</li>
+                    <li>Stem Stitch</li>
+                    <li>Over Casting</li>
+                    <li>Long & Short</li>
+                    <li>Leaf Stitch</li>
+                    <li>Salli Stitch</li>
+                    <li>Double Salli</li>
+                    <li>Jigu Jigu work</li>
+                    <li>Reverse Chain</li>
+                </ul>
+            </div>
+            <div>
+                <span></span>
+                <ul>
+                    <li>French knot</li>
+                    <li>Zardosi</li>
+                    <li>Paded Zardosi Work</li>
+                    <li>Chumki Work</li>
+                    <li>French Knot with Chumki</li>
+                    <li>Load Work</li>
+                    <li>Patch Work</li>
+                    <li>Cut Work</li>
+                    <li>Bead Work</li>
+                    <li>Thambur Stitch</li>
+                    <li>Stone work</li>
+                    <li>Mirror Work</li>
+                    <li>Kundan Work</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2>Short Term Courses</h2>
+    <b><span>Illustration</span></b>
+    <div>
+        <div>
+            <img src="images/Illustration-1.jpg" alt="eyenetfashion" />
+            <h4>Illustration -- Duration </h4>
+            <p>
+                The role of a fashion illustrator is to make the people aware 
+                of the latest trends in fashion. A fashion illustrator does this 
+                by means of his or her drawings. He or she works as a link between 
+                the fashion industry and the people who are interested in fashion. 
+                Fashions illustrations India is a well established service you can 
+                avail to get cost effective service.
+            </p>
+            <p>
+                Fashion illustration courses teach students to create images of 
+                apparel, shoes and accessories for fashion advertising campaigns, 
+                pattern books, catalogs, magazines and other fashion media. 
+                Coursework emphasizes artistic skills, such as proportion, color, 
+                texture and composition.
+            </p>
+            <span>Course Contents:</span>
+            <ul>
+                <li>Body Anatomy</li>
+                <li>Block Figure</li>
+                <li>Stick Figure </li>
+                <li>Stylized female Croquis </li>
+                <li>Fleshing out the shape</li>
+                <li>Different postures, turns & twists for female figures</li>
+                <li>Colour Theory</li>
+                <li>Uses of colour medium in figures</li>
+                <li>Fashion Accessories</li>
+            </ul>
+        </div>
+    </div>
+    <b><span>Fabric</span>&nbsp;Paintings</b>
+    <div>
+        <div>
+            <h4>Fabric Paintings -- Duration 2 Months</h4>
+            <img src="images/Fabric-painting.jpg" alt="eyenetfashion" />
+            <span>Objective:</span>
+            <p>
+                Fabric paint is a type of paint which is specifically designed 
+                for use on textiles. It is often used to create custom craft projects, 
+                and is also used on a commercial scale to apply patterns and decorations 
+                to textiles. Fabric Painting courses teach students to create images 
+                through the process of fabric painting, different fabrics such as 
+                apparel fabrics or home furnishing fabrics can be given a crafty look. 
+                In fact, it can also be used for embellishing finished garments such as 
+                t-shirt, pants, jeans, and jackets as also many other products like bags, 
+                pillows, or anything made up of fabrics just by adding designs and 
+                colors to them.
+            </p>
+            <div>
+                <span>Design Ideas</span>
+                <ul>
+                    <li>Colour Theory</li>
+                    <li>Design Developing</li> 
+                    <li>Basic strokes</li>
+                    <li>Plain filling work</li>
+                    <li>Shading work</li>
+                    <li>Dry Shading</li>
+                    <li>Tapping method</li>
+                    <li>Inwards and Outward strokes</li>
+                    <li>Stencil painting</li>
+                </ul>
+            </div>
+            <div>
+                <span>Transferring Ideas</span>
+                <ul>
+                    <li>Direct  Method</li>
+                    <li>Carbon tracing	</li>
+                    <li>Chalk powder tracing</li>
+                </ul>
+            </div>
+            <div>
+                <span>Type of Medium</span>
+                <ul>
+                    <li>Classic Colours</li>
+                    <li>Pearl Colours</li>
+                    <li>Silk Colours</li>
+                    <li>Fabric  Out Liners</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <b><span>Embroidery </span>&amp;&nbsp;Hand Works</b>
+    <div>	
+        <div>
+            <h4>Embroidery & Hand Works -- Duration </h4>
+            <img src="images/Hand-embroidery.jpg" alt="eyenetfashion" />
+            <span>Objective:</span>
+            <p>
+                To train the students better way to implement their embroidery 
+                talents because the embroidery is a beautiful thread work on a 
+                variety of fabrics, which make the fabric more attractive.  
+                Women are the pioneers in creating excellent delicate embroidered 
+                garments since ancient times. The taste and requirement for 
+                embroidered garments in the modern society is in increasing demand 
+                due to the fast changing fashion and their gracious look.  
+                Some of the traditional embroideries need to be popularized 
+                and developed into an industrial craft in order to save the 
+                reminiscent beauty of the past and ever lasting art. 
+            </p>
+            <div>
+                <h5>Design Ideas</h5>
+                <ul>
+                    <li>Colour Theory</li>
+                    <li>Design Developing</li> 
+                </ul>
+                <h5>Type of Threads</h5>
+                <ul>
+                    <li>Silk thread</li>
+                    <li>Hand embroidery thread</li>
+                    <li>Ribbon</li>
+                </ul>
+                <span>Type of Stitches</span>
+                <h5>Straight Family</h5>
+                <ul>
+                    <li>Running stitch</li>
+                    <li>Stem stitch</li>
+                    <li>Double stem stitch</li>
+                </ul>
+                <h5>Round Family</h5>
+                <ul>
+                    <li>Chickenkari</li>
+                    <li>Eye let</li>
+                    <li>Spider web</li>
+                    <li>Back spider web</li>
+                    <li>Round buttonhole</li>
+                    <li>Coin stitch</li>
+                </ul>
+                <h5>Crossed Family</h5>
+                <ul>
+                    <li>Cross stitch</li>
+                    <li>Herringbone</li>
+                    <li>Double herringbone</li>
+                    <li>Chevron stitch</li>
+                    <li>Fly stitch</li>
+                    <li>Feather stitch</li>
+                    <li>Vandyke stitch</li>
+                    <li>Star filling</li>
+                </ul>
+                <h5>Filling</h5>
+                <ul>
+                    <li>Satin stitch</li>
+                    <li>Encroaching satin</li>
+                    <li>Long & short filling</li>
+                    <li>Laid(Darning)</li>
+                    <li>Chain filling</li>
+                    <li>Blanket filling</li>
+                </ul>
+                <h5>Indian Embroidery</h5>
+                <ul>
+                    <li>Mirror work</li>
+                    <li>Shadow work</li>
+                    <li>Sequence work</li>
+                    <li>Appliqu&eacute; work</li>
+                    <li>Net appliqu&eacute;</li>
+                    <li>Jardhosi & Bead work</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Transferring Ideas</h5>
+                <ul>
+                    <li>Direct Method</li>
+                    <li>Carbon tracing</li>
+                    <li>Chalk powder tracing</li>
+                </ul>
+                <h5>Chain Family</h5>
+                <ul>
+                    <li>Simple chain stitch</li>
+                    <li>Broken chain stitch </li>
+                    <li>Alternate&nbsp;(magic)chain&nbsp;stitch </li>
+                    <li>Whipped chain stitch</li>
+                    <li>Raised chain</li>
+                    <li>Cable chain</li>
+                    <li>Open chain</li>
+                    <li>Zig zag chain</li>
+                    <li>Splite chain</li>
+                    <li>Twisted chain</li>
+                </ul>
+                <h5>Blanket Family</h5>
+                <ul>
+                    <li>Blanket stitch</li>
+                    <li>Long & short blanket stitch</li>
+                    <li>Group blanket stitch</li>
+                    <li>Un even blanket </li>
+                    <li>sequence blanket stitch </li>
+                    <li>Closed blanket stitch</li>
+                    <li>Cross blanket stitch </li>
+                    <li>Button hole stitch</li>
+                </ul>
+                <h5>Whipping and Couching</h5>
+                <ul>
+                    <li>Spiral whipping</li>
+                    <li>Pekience whipping</li>
+                    <li>Cross whipping</li>
+                    <li>Blanket whipping</li>
+                    <li>Cloud filling</li>
+                    <li>Simple couching</li>
+                    <li>Couch Telles</li>
+                </ul>
+                <h5>Knot and Dart Family</h5>
+                <ul>
+                    <li>German knot</li>
+                    <li>French knot</li>
+                    <li>Bullion knot</li>
+                    <li>Lazy-Dazy stitch</li>
+                    <li>Dot stitch</li>
+                    <li>Double lazy-dazy</li>
+                    <li>Roumanian knot</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <b><span>Jewellery </span> Making</b>
+    <div>	
+        <div>
+            <h4>Jewellery Making -- Duration </h4>
+            <img src="images/jewellery-making.jpg" alt="eyenetfashion"/>
+            <span>Objective:</span>
+            <p>
+                The course is recommended for anyone who is into the family 
+                business of jewelry and wants to sharpen his/her skill or an 
+                individual who is interested in joining the business of jewelry, 
+                an industry that is seeing a rapid growth in India as well as 
+                in the international market. The course offers a launch pad for 
+                creative minds to learn new skills and techniques in the highly 
+                exciting and creative field of jewelry making.
+            </p>
+            <p>
+                Costume jewelry is often 'mixed media', meaning that it's made 
+                from a combination of different materials such as metal, clay, 
+                fabric, plastic etc. Costume jewelry making is accessible to everyone 
+                and is a popular and fun hobby. To make your own jewelry means that 
+                you can keep up-to-date with fashion trends for much less money, 
+                plus you can make accessories that are completely unique to you. If 
+                you see a necklace, bracelet or pair of earrings you like in a high 
+                street shop then you can use it for inspiration to make your own 
+                homemade version.
+            </p>
+            <span>Course Contents</span>
+            <ul>
+                <li>Kundan jewelry </li>
+                <li>Beaded jewelry</li>
+                <li>Paper jewelry </li>
+                <li>Paper quilling </li>
+                <li>Clay jewelry (Shilpakar)</li>
+                <li>Terracotta jewelry</li>
+                <li>Ribbon jewelry </li>
+                <li>Threaded Ornaments</li>
+            </ul>
+        </div>
+    </div>
 </div>
 </div>
-     </div>
-     </div>
-     </>
+</>
     )
 }
 
