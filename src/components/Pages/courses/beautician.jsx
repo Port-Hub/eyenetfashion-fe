@@ -1,8 +1,8 @@
-import Pg1img1 from "../../assets/beautician/Beautician_1.jpg";
-import Pg1img2 from"../../assets/beautician/Parlour_Infra_1.jpg";
-import Pg1img3 from"../../assets/beautician/Parlour_Infra.jpg";
-import Pg1img4 from"../../assets/beautician/Parlour_Infra_2.jpg";
-import Pg1img5 from"../../assets/beautician/Parlour_Infra_3.jpg";
+import Pg1img1 from "../../../assets/beautician/Beautician_1.jpg";
+import Pg1img2 from "../../../assets/beautician/Parlour_Infra_1.jpg";
+import Pg1img3 from "../../../assets/beautician/Parlour_Infra.jpg";
+import Pg1img4 from "../../../assets/beautician/Parlour_Infra_2.jpg";
+import Pg1img5 from "../../../assets/beautician/Parlour_Infra_3.jpg";
 const Beautician = () => {
     return (
         <div>
