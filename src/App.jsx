@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Header/navbar';
+import NavBar from './components/Header/navbar';
 import Footer from './components/Footer/footer';
 import Home from "./components/Pages/home";
 import Contact from "./components/Pages/contact";
@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar />
+      <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           {childRoute}
