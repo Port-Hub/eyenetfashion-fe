@@ -155,10 +155,7 @@ const Beautician = () => {
                 <li>Normal Make up</li>
                 <li>Saree drapping (2 types)</li>
                     </ul></div>
-                
-
-
-                
+                               
             <h4>Certificate in Hair Care </h4>
                 <div>
                 <img src={Pg5img1} />
