@@ -12,12 +12,11 @@ import Events from "../Pages/news/events";
 import Workshop from "../Pages/news/workshop";
 import Honour from "../Pages/students/honour";
 import Portfolio from "../Pages/students/portfolio";
-import { Dropdown } from "react-daisyui";
 
 const mapChild = (param) => {
     return (
         param.map((item, index) => (
-        <Dropdown.Item key={index} href={"/"+ item.to}>{item.name}</Dropdown.Item>
+        <li key={index}><Link to={"/"+ item.to}>{item.name}</Link></li>
             )
         )
     )
@@ -37,7 +36,7 @@ const mapParent = (param) => {
         <li tabIndex="0" key={index}>
             <a>
                 {item.name}
-                {Droparrow}
+                {Dropdown}
             </a>
             <ul className="p-2 bg-base-300">
                 {mapChild(item.Array)}
@@ -48,7 +47,7 @@ const mapParent = (param) => {
     )
 }
 
-const Droparrow =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
+const Dropdown =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
 const childArray = [
     {
         name:"About",
