@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["business"
+    themes: ["night"
       // {
       //   proDark: {
       //     "primary": "#eda8c5",

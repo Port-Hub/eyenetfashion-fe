@@ -2,7 +2,7 @@ const Photography = () => {
   return (
     <div class="flex flex-row">
       <div class="basis-3/4">
-        <h1>DIGITAL SLR COURSE</h1>
+        <h1 class="text-4xl text-base-content font-bold">DIGITAL SLR COURSE</h1>
         <br />
         <h2>Introduction to DSLR Cameras</h2>
         <ul>
