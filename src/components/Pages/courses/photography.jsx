@@ -1,16 +1,19 @@
+const photoArray = [
+  {
+    title:"Introduction to DSLR Cameras",
+    points:[]
+  }
+]
+
 const Photography = () => {
-  return (
-    <>
-      
-      <div class="container mx-auto px-4 ">
-        <article class="prose prose-zinc">
+  return (   
+      <div className="container mx-auto px-4 text-center">
           <h1>DIGITAL SLR COURSE</h1>
-        </article>
-        <div class="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4">
           <div>
-            <article class="prose prose-zinc">
+            <article className="prose prose-zinc">
               <h2>Introduction to DSLR Cameras</h2>
-              <ul>
+              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
                 <li>Learning about Camera menus and its functions</li>
                 <li>
                   Understanding Various file formats like Raw, Tiff, Jpeg etc</li>
@@ -22,9 +25,9 @@ const Photography = () => {
             </article>
           </div>
           <div >
-            <article class="prose prose-zinc">
+            <article className="prose prose-zinc">
               <h2>Exposure</h2>
-              <ul>
+              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
                 <li>
                   Controlling motion and depth of field while making images{" "}
                 </li>
@@ -42,9 +45,9 @@ const Photography = () => {
             </article>
           </div>
           <div>
-            <article class="prose prose-zinc">
+            <article className="prose prose-zinc">
               <h2>Lenses</h2>
-              <ul>
+              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
                 <li>
                   Knowing about Zoom lenses, Fixed focal length lenses and their
                   constructions{" "}
@@ -63,9 +66,9 @@ const Photography = () => {
             </article>
           </div>
           <div>
-            <article class="prose prose-zinc">
+            <article className="prose prose-zinc">
               <h2>Light Awareness </h2>
-              <ul>
+              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
                 <li>
                   Quality of light Hard and soft light and how they occur in
                   nature.{" "}
@@ -81,9 +84,9 @@ const Photography = () => {
             </article>
           </div>
           <div>
-            <article class="prose prose-zinc">
+            <article className="prose prose-zinc">
               <h2>Effective Story telling </h2>
-              <ul>
+              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
                 <li>Visualization and enhancing observation skills </li>
                 <li>
                   Study of visual elements like shapes, forms, texture etc{" "}
@@ -104,7 +107,6 @@ const Photography = () => {
           
         </div>
       </div>
-    </>
   );
 };
 
