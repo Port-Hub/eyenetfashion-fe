@@ -57,7 +57,7 @@ const Photography = () => {
   return (
     <>
       <h1 className="text-center text-4xl font-semibold">DIGITAL SLR COURSE</h1>
-      <div class="flex justify-center w-full py-2 gap-2">
+      <div className="flex justify-center w-full py-2 gap-2">
         {linkList}
       </div>
       <div className="carousel">
