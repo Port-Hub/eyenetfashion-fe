@@ -81,17 +81,19 @@ const mapCards =(param) =>{
   </div> 
   ));
 }
+
+// const photoList = mapPhoto(photoArray);
 const cardList = mapCards(photoArray);
 
 const Photography = () => {
   return (
     <>
-      <h1 classNameName="text-center text-4xl font-semibold py-6">
+      <h1 className="text-center text-4xl font-semibold py-6">
         DIGITAL SLR COURSE
       </h1>
       <div
         id="services"
-        className="section relative pt-20 pb-8 md:pt-16 md:pb-0"
+        className="section pt-20 pb-8 md:pt-16 md:pb-0"
       >
         <div className="container xl:max-w-6xl mx-auto px-4">
           {/* <!-- Heading start --> */}
