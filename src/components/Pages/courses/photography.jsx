@@ -54,37 +54,36 @@ const photoArray = [
   },
 ];
 
-const mapChild = (param) => {
-  return param.map((item, index) => <li key={index}>{item}</li>);
-};
+// const mapChild = (param) => {
+//   return param.map((item, index) => <li key={index}>{item}</li>);
+// };
 
-const mapCards =(param) =>{
-  return param.map((item,index)=>(
-    <div className="flex flex-wrap flex-row -mx-4 text-center">
-    <div
-      className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-      data-wow-duration="1s"
-      // style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
-    >
-      {/* <!-- service block --> */}
-      <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-        <div className="inline-block text-gray-900 mb-4">
-        </div>
-        <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-          {item.title}
-        </h3>
-        <p className="text-gray-500">
-          {mapChild(item.points)}
-        </p>
-      </div>
-    </div>
-  </div> 
-  ));
-}
+// const mapCards =(param) =>{
+//   return param.map((item,index)=>(
+//     <div className="flex flex-wrap flex-row -mx-4 text-center">
+//     <div
+//       className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+//       data-wow-duration="1s"
+//       // style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
+//     >
+//       {/* <!-- service block --> */}
+//       <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+//         <div className="inline-block text-gray-900 mb-4">
+//         </div>
+//         <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+//           {item.title}
+//         </h3>
+//         <p className="text-gray-500">
+//           {mapChild(item.points)}
+//         </p>
+//       </div>
+//     </div>
+//   </div> 
+//   ));
+// }
 
 // const photoList = mapPhoto(photoArray);
-const cardList = mapCards(photoArray);
-
+// const cardList = mapCards(photoArray);
 const Photography = () => {
   return (
     <>
@@ -92,24 +91,62 @@ const Photography = () => {
         DIGITAL SLR COURSE
       </h1>
       <div
-        id="services"
         className="section pt-20 pb-8 md:pt-16 md:pb-0"
       >
         <div className="container xl:max-w-6xl mx-auto px-4">
-          {/* <!-- Heading start --> */}
-          <header className="text-center mx-auto mb-12 lg:px-20">
-            <h2 className="text-2xl leading-normal mb-2 font-bold text-black">
-              What We Do
-            </h2>
-            <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
-              Save time managing advertising &amp; Content for your business.
-            </p>
-          </header>
-          {/* <!-- End heading -->
-        <!-- row --> */}
-        {cardList}
+        {/* <!-- row --> */}
+        <div className="flex flex-wrap flex-row -mx-4 text-center">
+            <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                {/* <!-- service block --> */}
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div className="inline-block text-gray-900 mb-4">
+                    </div>
+                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[0].title}</h3>
+                    <p className="text-gray-500">{photoArray[0].points}</p>
+                </div>
+                {/* <!-- end service block --> */}
+            </div>
+            <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" styles="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                {/* <!-- service block --> */}
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div className="inline-block text-gray-900 mb-4">
+                    </div>
+                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[1].title}</h3>
+                    <p className="text-gray-500">{photoArray[1].points}</p>
+                </div>
+                {/* <!-- end service block --> */}
+            </div>
+            <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" styles="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                {/* <!-- service block --> */}
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div className="inline-block text-gray-900 mb-4">
+                    </div>
+                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[2].title}</h3>
+                    <p className="text-gray-500">{photoArray[2].points}</p>
+                </div>
+                {/* <!-- end service block --> */}
+            </div>
+            <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                {/* <!-- service block --> */}
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div className="inline-block text-gray-900 mb-4">
+                    </div>
+                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[3].title}</h3>
+                    <p className="text-gray-500">{photoArray[3].points}</p>
+                </div>
+                {/* <!-- end service block --> */}
+            </div>
+            <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" styles="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                {/* <!-- service block --> */}
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[4].title}</h3>
+                    <p className="text-gray-500">{photoArray[4].points}</p>
+                </div>
+                {/* <!-- end service block --> */}
+            </div>
         </div>
-        {/* {photoList} */}
+      
+        </div>
       </div>
     </>
   );
