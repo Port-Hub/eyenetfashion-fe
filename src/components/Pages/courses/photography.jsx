@@ -33,7 +33,7 @@ const mapChild = (param) => {
 const mapLink = (param) => {
   return (
     param.map((item,index) => (
-      <a key={index} href={"#item"+index} className="btn btn-xl">{item.title}</a>
+      <a key={index} href={"#item"+index} className="btn btn-xs">{index+1}</a>
     ))
   )
 }
@@ -43,6 +43,7 @@ const mapPhoto = (param) => {
     param.map((item,index) => (
         <div key={index} id={"item"+index} className=" hero carousel-item w-full">
           <ul className="text-justify p-10 border-4 rounded-2xl">
+            <h2 className="text-center text-2xl text-secondary py-4">{item.title}</h2>
             {mapChild(item.points)}
           </ul>
         </div>
@@ -56,12 +57,12 @@ const linkList = mapLink(photoArray);
 const Photography = () => {
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold">DIGITAL SLR COURSE</h1>
-      <div className="flex justify-center w-full py-2 gap-2">
-        {linkList}
-      </div>
+      <h1 className="text-center text-4xl font-semibold py-6">DIGITAL SLR COURSE</h1>
       <div className="carousel">
         {photoList}
+      </div>
+      <div className="flex justify-center w-full py-2 gap-2">
+        {linkList}
       </div>
     </>
   );
