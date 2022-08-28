@@ -54,9 +54,9 @@ const photoArray = [
   },
 ];
 
-// const mapChild = (param) => {
-//   return param.map((item, index) => <li key={index}>{item}</li>);
-// };
+const mapChild = (param) => {
+  return param.map((item, index) => <li key={index}>{item}</li>);
+};
 
 // const mapCards =(param) =>{
 //   return param.map((item,index)=>(
@@ -93,7 +93,7 @@ const Photography = () => {
       <div
         className="section pt-20 pb-8 md:pt-16 md:pb-0"
       >
-        <div className="container xl:max-w-6xl mx-auto px-4">
+        <div className="container xl:max-w-15xl mx-auto px-4">
         {/* <!-- row --> */}
         <div className="flex flex-wrap flex-row -mx-4 text-center">
             <div className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
@@ -102,7 +102,7 @@ const Photography = () => {
                     <div className="inline-block text-gray-900 mb-4">
                     </div>
                     <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[0].title}</h3>
-                    <p className="text-gray-500">{photoArray[0].points}</p>
+                    <p className="text-gray-500">{mapChild(photoArray[0].points)}</p>
                 </div>
                 {/* <!-- end service block --> */}
             </div>
@@ -112,7 +112,7 @@ const Photography = () => {
                     <div className="inline-block text-gray-900 mb-4">
                     </div>
                     <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[1].title}</h3>
-                    <p className="text-gray-500">{photoArray[1].points}</p>
+                    <p className="text-gray-500">{mapChild(photoArray[1].points)}</p>
                 </div>
                 {/* <!-- end service block --> */}
             </div>
@@ -122,7 +122,7 @@ const Photography = () => {
                     <div className="inline-block text-gray-900 mb-4">
                     </div>
                     <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[2].title}</h3>
-                    <p className="text-gray-500">{photoArray[2].points}</p>
+                    <p className="text-gray-500">{mapChild(photoArray[2].points)}</p>
                 </div>
                 {/* <!-- end service block --> */}
             </div>
@@ -132,7 +132,7 @@ const Photography = () => {
                     <div className="inline-block text-gray-900 mb-4">
                     </div>
                     <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[3].title}</h3>
-                    <p className="text-gray-500">{photoArray[3].points}</p>
+                    <p className="text-gray-500">{mapChild(photoArray[3].points)}</p>
                 </div>
                 {/* <!-- end service block --> */}
             </div>
@@ -140,7 +140,7 @@ const Photography = () => {
                 {/* <!-- service block --> */}
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                     <h3 className="text-lg leading-normal mb-2 font-semibold text-black">{photoArray[4].title}</h3>
-                    <p className="text-gray-500">{photoArray[4].points}</p>
+                    <p className="text-gray-500">{mapChild(photoArray[4].points)}</p>
                 </div>
                 {/* <!-- end service block --> */}
             </div>
