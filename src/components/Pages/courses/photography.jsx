@@ -1,111 +1,57 @@
 const photoArray = [
   {
     title:"Introduction to DSLR Cameras",
-    points:[]
+    points:["Learning about Camera menus and its functions","Mega pixel and resolution Full frame sensors and cropped frame sensors,Crop Factor"]
+  },
+  {
+    title:"Exposure",
+    points:["Controlling motion and depth of field while making images","Exposure meters and choosing the best mode suitable for a situation","Exposure compensation, Exposure bracketing and Exposure balancing","Histogram and its uses","Color balance"]
+  },
+  {
+    title:"Lenses",
+    points:["Knowing about Zoom lenses, Fixed focal length lenses and their constructions","Auto focusing and manual focusing","Image stabilisation","Choosing AF points based on the subject for best results","Wide, normal and tele lenses understanding how they control the perspective quality in an image","Making razor sharp images"]
+  },
+  {
+    title:"Light Awareness",
+    points:["Quality of light Hard and soft light and how they occur in nature","Choosing the best light for making images","Direction of light Understanding its effects for making interesting images","Built in flash light and its creative usage","Flash bracketing and fill flash techniques"]
+  },
+  {
+    title:"Effective Story Telling",
+    points:["Visualization and enhancing observation skills","Study of visual elements like shapes, forms, texture etc","Colors and their influence on a photograph","Making mundane subjects look great in your images","Art of composing an Image","Conversion of Raw files through Lightroom / Adobe Camera Raw","Tools that control your image","Enhancing your images","Sharpening","Quality output for Prints and for web applications"]
   }
 ]
+
+const mapChild = (param) => {
+  return (
+      param.map((item, index) => (
+      <li key={index}>{item}</li>
+          )
+      )
+  )
+}
+
+const mapPhoto = (param) => {
+  return (
+    param.map((item) => (
+      <div className="flex flex-wrap gap-6">
+        <article className="prose prose-zinc">
+          <h2>{item.title}</h2>
+          <ul className="list-none text-justify p-6 border-4 rounded-2xl">
+            {mapChild(item.points)}
+          </ul>
+        </article>
+      </div>
+    ))
+  )
+}
+
+const photoList = mapPhoto(photoArray);
 
 const Photography = () => {
   return (   
       <div className="container mx-auto px-4 text-center">
-          <h1>DIGITAL SLR COURSE</h1>
-        <div className="flex flex-wrap gap-4">
-          <div>
-            <article className="prose prose-zinc">
-              <h2>Introduction to DSLR Cameras</h2>
-              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
-                <li>Learning about Camera menus and its functions</li>
-                <li>
-                  Understanding Various file formats like Raw, Tiff, Jpeg etc</li>
-                <li>
-                  Mega pixel and resolution Full frame sensors and cropped frame
-                  sensors,Crop Factor
-                  </li>
-              </ul>
-            </article>
-          </div>
-          <div >
-            <article className="prose prose-zinc">
-              <h2>Exposure</h2>
-              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
-                <li>
-                  Controlling motion and depth of field while making images{" "}
-                </li>
-                <li>
-                  Exposure meters and choosing the best mode suitable for a
-                  situation
-                </li>
-                <li>
-                  Exposure compensation, Exposure bracketing and Exposure
-                  balancing
-                </li>
-                <li>Histogram and its uses </li>
-                <li>Color balance </li>
-              </ul>
-            </article>
-          </div>
-          <div>
-            <article className="prose prose-zinc">
-              <h2>Lenses</h2>
-              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
-                <li>
-                  Knowing about Zoom lenses, Fixed focal length lenses and their
-                  constructions{" "}
-                </li>
-                <li>Auto focusing and manual focusing </li>
-                <li> Image stabilisation </li>
-                <li>
-                  Choosing AF points based on the subject for best results{" "}
-                </li>
-                <li>
-                  Wide, normal and tele lenses understanding how they control
-                  the perspective quality in an image{" "}
-                </li>
-                <li>Making razor sharp images </li>
-              </ul>
-            </article>
-          </div>
-          <div>
-            <article className="prose prose-zinc">
-              <h2>Light Awareness </h2>
-              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
-                <li>
-                  Quality of light Hard and soft light and how they occur in
-                  nature.{" "}
-                </li>
-                <li>Choosing the best light for making images </li>
-                <li>
-                  Direction of light Understanding its effects for making
-                  interesting images{" "}
-                </li>
-                <li>Built in flash light and its creative usage. </li>
-                <li> Flash bracketing and fill flash techniques </li>
-              </ul>
-            </article>
-          </div>
-          <div>
-            <article className="prose prose-zinc">
-              <h2>Effective Story telling </h2>
-              <ul className=" list-none text-justify p-6 border-4 rounded-2xl">
-                <li>Visualization and enhancing observation skills </li>
-                <li>
-                  Study of visual elements like shapes, forms, texture etc{" "}
-                </li>
-                <li>Colors and their influence on a photograph </li>
-                <li>Making mundane subjects look great in your images </li>
-                <li>Art of composing an Image</li>
-                <li>
-                  Conversion of Raw files through Lightroom / Adobe Camera Raw{" "}
-                </li>
-                <li>Tools that control your image </li>
-                <li> Enhancing your images </li>
-                <li>Sharpening </li>
-                <li>Quality output for Prints and for web applications</li>
-              </ul>
-            </article>
-          </div>
-          
-        </div>
+        <h1 className=" text-4xl font-semibold">DIGITAL SLR COURSE</h1>
+        {photoList}          
       </div>
   );
 };
