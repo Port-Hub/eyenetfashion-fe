@@ -3,13 +3,13 @@ import image1 from "../../assets/contactform/Combo-offer-1.jpg";
 
 const Contact = () => {
   return (
-    <div className="flex flex-row flex-wrap: wrap;">
-    <div class="basis-1/2">
-        <img src={image1} alt="combo offer" />
+    <div className="flex flex-row flex-wrap: wrap gap-4 content-center items-center ">
+    <div className="basis-1/2 px-10">
+        <img className="shadow-xl" src={image1} alt="combo offer" />
     </div>
-     <div class="basis-1/2">
-    <div class="w-full md:w-96 md:max-w-full mx-auto">
-      <div class="p-6 border border-gray-300 sm:rounded-md">
+     <div class="basis-1/2  pt-10">
+      <div class="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
+      <div class="p-6 border border-gray-300 sm:rounded-md ">
         <form
           method="POST"
           action="https://herotofu.com/start"
