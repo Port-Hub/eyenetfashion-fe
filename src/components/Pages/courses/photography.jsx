@@ -117,7 +117,7 @@ const mapPhoto = (param) =>{
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
-    <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out shadow-2xl hover:-translate-y-2">
+    <div className="py-8 px-12 mb-12 rounded-2xl bg-transparent transform transition duration-300 ease-in-out shadow-2xl hover:-translate-y-2">
       <div className="inline-block text-gray-900 mb-4">
         {item.svg}
       </div>
