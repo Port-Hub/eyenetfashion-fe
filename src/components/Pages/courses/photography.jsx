@@ -58,32 +58,7 @@ const mapChild = (param) => {
   return param.map((item, index) => <li key={index}>{item}</li>);
 };
 
-// const mapCards =(param) =>{
-//   return param.map((item,index)=>(
-//     <div className="flex flex-wrap flex-row -mx-4 text-center">
-//     <div
-//       className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-//       data-wow-duration="1s"
-//       // style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
-//     >
-//       {/* <!-- service block --> */}
-//       <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-//         <div className="inline-block text-gray-900 mb-4">
-//         </div>
-//         <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-//           {item.title}
-//         </h3>
-//         <p className="text-gray-500">
-//           {mapChild(item.points)}
-//         </p>
-//       </div>
-//     </div>
-//   </div>
-//   ));
-// }
 
-// const photoList = mapPhoto(photoArray);
-// const cardList = mapCards(photoArray);
 const Photography = () => {
   return (
     <>
@@ -91,16 +66,16 @@ const Photography = () => {
         DIGITAL SLR COURSE
       </h1>
       <div className="section pt-20 pb-8 md:pt-16 md:pb-0">
-        <div className="container xl:max-w-15xl mx-auto px-4">
+        <div className="container xl:max-w-15xl mx-auto px-4 ">
           {/* <!-- row --> */}
-          <div className="flex flex-wrap flex-row -mx-4 text-center">
+          <div className="flex flex-wrap flex-row -mx-4 text-center ">
             <div
-              className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp "
+              className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp  "
               data-wow-duration="1s"
               styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
             >
               {/* <!-- service block --> */}
-              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-2xl">
                 <div className="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +107,7 @@ const Photography = () => {
               styles="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;"
             >
               {/* <!-- service block --> */}
-              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-2xl">
                 <div className="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -153,13 +128,13 @@ const Photography = () => {
               {/* <!-- end service block --> */}
             </div>
             <div
-              className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+              className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp "
               data-wow-duration="1s"
               data-wow-delay=".3s"
               styles="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;"
             >
               {/* <!-- service block --> */}
-              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-2xl">
                 <div className="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +161,7 @@ const Photography = () => {
               styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
             >
               {/* <!-- service block --> */}
-              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-2xl">
                 <div className="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +193,7 @@ const Photography = () => {
               styles="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;"
             >
               {/* <!-- service block --> */}
-              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+              <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-2xl">
                 <div className="inline-block text-gray-900 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
