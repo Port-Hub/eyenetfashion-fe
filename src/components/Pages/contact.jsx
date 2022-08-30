@@ -7,21 +7,21 @@ const Contact = () => {
     <div className="basis-1/2 px-10">
         <img className="shadow-xl" src={image1} alt="combo offer" />
     </div>
-     <div class="basis-1/2  pt-10">
-      <div class="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
-      <div class="p-6 border border-gray-300 sm:rounded-md ">
+     <div className="basis-1/2  pt-10">
+      <div className="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
+      <div className="p-6 border border-gray-300 sm:rounded-md ">
         <form
           method="POST"
           action="https://herotofu.com/start"
-          enctype="multipart/form-data"
+          encType="multipart/form-data"
         >
-          <label class="block mb-6">
-            <span class="text-gray-700">Your name</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Your name</span>
             <input
               required
               name="name"
               type="text"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -36,13 +36,13 @@ const Contact = () => {
             //   placeholder="Joe Bloggs"
             />
           </label>
-          <label class="block mb-6">
-            <span class="text-gray-700">Email address</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Email address</span>
             <input
               required
               name="email"
               type="email"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -57,13 +57,13 @@ const Contact = () => {
             //   placeholder="joe.bloggs@example.com"
             />
           </label>
-          <label class="block mb-6">
-            <span class="text-gray-700">Phone Number</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Phone Number</span>
             <input
               required
               name="email"
               type="number"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -78,12 +78,12 @@ const Contact = () => {
             //   placeholder="0123456789"
             />
           </label>
-          <label class="block mb-6">
-            <span class="text-gray-700">Course of interest</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Course of interest</span>
             <select
               required
               name="experience"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -104,11 +104,11 @@ const Contact = () => {
               <option>Beautician</option>
             </select>
           </label>
-          <label class="block mb-6">
-            <span class="text-gray-700">Enquiry description	</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Enquiry description	</span>
             <textarea
               name="message"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -124,11 +124,11 @@ const Contact = () => {
             //   placeholder="What motivates you?"
             ></textarea>
           </label>
-          <label class="block mb-6">
-            <span class="text-gray-700">Address</span>
+          <label className="block mb-6">
+            <span className="text-gray-700">Address</span>
             <textarea
               name="message"
-              class="
+              className="
             block
             w-full
             mt-1
@@ -144,10 +144,10 @@ const Contact = () => {
             //   placeholder="What motivates you?"
             ></textarea>
           </label>
-          <div class="mb-6">
+          <div className="mb-6">
             <button
               type="submit"
-              class="
+              className="
             h-10
             px-5
             text-indigo-100
