@@ -113,11 +113,11 @@ const mapPhoto = (param) =>{
   return param.map((item,index)=>(
     <div
     key={index}
-    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp "
+    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
-    <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+    <div className="py-8 px-12 mb-12 bg-transparent rounded-2xl shadow-2xl transform transition duration-300 ease-in-out hover:-translate-y-2">
       <div className="inline-block text-gray-900 mb-4">
         {item.svg}
       </div>
