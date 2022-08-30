@@ -2,11 +2,14 @@ import image1 from "../../assets/contactform/Combo-offer-1.jpg";
 
 const Contact = () => {
   return (
-    <div className="flex flex-wrap flex-row -mx-4 items-center justify-center">
+    <div className="flex flex-wrap flex-row -mx-4 justify-center items-center">
       <div className="basis-1/2 px-20 pt-4 pb-4">
         <img
-          className="shadow-xl"
-          src={image1}
+          className=" border-4
+          rounded 
+          my-4
+          md:p-4"
+          src={image1}s
           alt="combo offer"
           style={{ alignSelf: "center" }}
         />
@@ -118,9 +121,9 @@ const Contact = () => {
           ></path>
         </svg> */}
       </div>
-      <div className="basis-1/2  pt-10 pr-0">
+      <div className="basis-1/2  pt-10 pr-15 ">
         <div className="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
-          <div className="p-6 border border-gray-300 sm:rounded-md ">
+          <div className="p-6 border border-stone-50 bg-stone-50 sm:rounded-xl ">
             <form
               method="POST"
               action="https://herotofu.com/start"
