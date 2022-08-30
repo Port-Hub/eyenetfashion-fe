@@ -5,7 +5,7 @@ import Navend from "./Navend";
 
 const Navbar = () => {
     return (
-      <nav className="navbar bg-base-300 z-10 sticky top-0">
+      <nav className="navbar bg-base-200 bg-opacity-75 z-10 sticky top-0">
         <Navstart />
         <Navcenter />
         <Navend />
