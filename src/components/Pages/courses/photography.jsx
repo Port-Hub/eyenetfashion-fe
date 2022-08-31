@@ -113,7 +113,7 @@ const mapPhoto = (param) =>{
   return param.map((item,index)=>(
     <div
     key={index}
-    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 flex-grow"
+    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 flex-grow justify-center"
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >

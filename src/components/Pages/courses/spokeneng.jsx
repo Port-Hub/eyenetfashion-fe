@@ -79,7 +79,7 @@ const mapSpoken = (param) =>{
   return param.map((item,index)=>(
     <div
     key={index}
-    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:px-6 flex-grow"
+    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:px-6 flex-grow justify-center"
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
