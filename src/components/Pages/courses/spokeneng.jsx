@@ -79,7 +79,7 @@ const mapSpoken = (param) =>{
   return param.map((item,index)=>(
     <div
     key={index}
-    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:px-6 flex-grow"
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
@@ -106,7 +106,7 @@ const Spoken = () => {
     <h1 className="text-center text-4xl font-semibold py-6">
       Spoken English
     </h1>
-    <p className="text-center px-60">
+    <p className="prose-h3 px-6">
       Today is the age of globalisation it is difficult for one to
       remainconnected with the rest of the worldwithout English Knowledge.
       Further English Speaking prople have an edge over others in the job

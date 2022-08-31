@@ -103,7 +103,7 @@ const photoArray = [
     <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z" />
     </svg>
   },
-];
+]
 
 const mapChild = (param) => {
   return param.map((item, index) => <li key={index}>{item}</li>);
@@ -113,7 +113,7 @@ const mapPhoto = (param) =>{
   return param.map((item,index)=>(
     <div
     key={index}
-    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6"
+    className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 flex-grow"
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
@@ -138,7 +138,7 @@ const Photography = () => {
   return (
     <>
       <h1 className="text-center text-4xl font-semibold py-6">
-        DIGITAL SLR COURSE
+        Digital SLR Course
       </h1>
       <div className="section pt-20 pb-8 md:pt-16 md:pb-0">
         <div className="container xl:max-w-15xl mx-auto px-4">
