@@ -2,18 +2,27 @@ import { useState, createRef } from "react";
 import { Link } from "react-router-dom";
 import Buttons from "./Buttons";
 
+const html = document.querySelector("html");
+
 const Navend = () => {
     const [check, setCheck] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
     const lbutton = createRef();
     const dbutton = createRef();
 
+    if(check)
+        html.classList.add("dark")
+    else
+        html.classList.remove("dark")
+
     const themeSwitch = () => {
         setCheck(!check);
         if(check){
             lbutton.current.click();
+            html.classList.remove("dark")
         }
         else{
             dbutton.current.click();
+            html.classList.add("dark")
         }
     }
     return (
