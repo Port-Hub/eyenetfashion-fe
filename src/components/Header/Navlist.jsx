@@ -4,7 +4,7 @@ import Infra from "../Pages/infra";
 import Gallery from "../Pages/gallery";
 import Beautician from "../Pages/courses/beautician";
 import Computer from "../Pages/courses/computer";
-import Fashion from "../Pages/courses/fashiondes";
+import Fashion from "../Pages/courses/fashion";
 import Multimedia from "../Pages/courses/multimedia";
 import Photography from "../Pages/courses/photography";
 import Spoken from "../Pages/courses/spokeneng";

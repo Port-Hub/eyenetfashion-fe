@@ -1,3 +1,13 @@
+import Fashion1 from "../../../assets/fashion/Fashion_1.jpg"
+import Fashion2 from "../../../assets/fashion/Fashion_2.jpg"
+import Fashion3 from "../../../assets/fashion/Fashion_3.jpg"
+import Fashion4 from "../../../assets/fashion/Fashion_4.jpg"
+import Fashion5 from "../../../assets/fashion/Fashion_5.jpg"
+import Fashion6 from "../../../assets/fashion/Fashion_6.jpg"
+import Fashion7 from "../../../assets/fashion/Fashion_7.jpg"
+import Fashion8 from "../../../assets/fashion/Fashion_8.jpg"
+import Fashion9 from "../../../assets/fashion/Fashion_9.jpg"
+
 const Fashion = () => {
     return (
         <>
@@ -7,7 +17,7 @@ const Fashion = () => {
 
             <h4>Introduction</h4>
 
-            <img src="images/FD-one-year-1.jpg" alt="eyenetfashion" />
+            <img src={Fashion1} alt="eyenetfashion" />
 
             <p>
                         These days career in fashion designing 
@@ -347,7 +357,7 @@ const Fashion = () => {
         <div>
             <div>
                 <h4>Chudhidhar Making -- Duration 2 Months</h4>
-                <img src="images/Churidhar.jpg" alt="eyenetfashion"/>
+                <img src={Fashion2} alt="eyenetfashion"/>
                 <span>Objectives</span>
                 <p>
                     Churidars are among the most common outfits for 
@@ -404,7 +414,7 @@ const Fashion = () => {
         <div >
             <div>
                 <h4>Blouse Making -- Duration 2 Months</h4>
-                <img src="images/Blouse.jpg" alt="eyenetfashion" />
+                <img src={Fashion3} alt="eyenetfashion" />
             </div>
             <span>objectives</span>
             <p>
@@ -446,7 +456,7 @@ const Fashion = () => {
         <div>	
             <div>
                 <h4>Pattern Making -- Duration </h4>
-                <img src="images/pattern-making.jpg" alt="eyenetfashion" />
+                <img src={Fashion4} alt="eyenetfashion" />
                 <span>Objective:</span>
                 <div>
                     <p>
@@ -483,7 +493,7 @@ const Fashion = () => {
         <div>
             <div>
                 <h4>Aari Embroidery -- Duration 2 Months</h4>
-                <img src="images/Aari.jpg" alt="eyenetfashion" />
+                <img src={Fashion5} alt="eyenetfashion" />
                 <span>Objectives</span>
                 <p>
                 Aari work has always been considered one of the most tedious 
@@ -536,7 +546,7 @@ const Fashion = () => {
     <b><span>Illustration</span></b>
     <div>
         <div>
-            <img src="images/Illustration-1.jpg" alt="eyenetfashion" />
+            <img src={Fashion6} alt="eyenetfashion" />
             <h4>Illustration -- Duration </h4>
             <p>
                 The role of a fashion illustrator is to make the people aware 
@@ -571,7 +581,7 @@ const Fashion = () => {
     <div>
         <div>
             <h4>Fabric Paintings -- Duration 2 Months</h4>
-            <img src="images/Fabric-painting.jpg" alt="eyenetfashion" />
+            <img src={Fashion7} alt="eyenetfashion" />
             <span>Objective:</span>
             <p>
                 Fabric paint is a type of paint which is specifically designed 
@@ -618,11 +628,11 @@ const Fashion = () => {
             </div>
         </div>
     </div>
-    <b><span>Embroidery </span>&amp;&nbsp;Hand Works</b>
+    <b><span>Embroidery </span>& Hand Works</b>
     <div>	
         <div>
             <h4>Embroidery & Hand Works -- Duration </h4>
-            <img src="images/Hand-embroidery.jpg" alt="eyenetfashion" />
+            <img src={Fashion8} alt="eyenetfashion" />
             <span>Objective:</span>
             <p>
                 To train the students better way to implement their embroidery 
@@ -752,7 +762,7 @@ const Fashion = () => {
     <div>	
         <div>
             <h4>Jewellery Making -- Duration </h4>
-            <img src="images/jewellery-making.jpg" alt="eyenetfashion"/>
+            <img src={Fashion9} alt="eyenetfashion"/>
             <span>Objective:</span>
             <p>
                 The course is recommended for anyone who is into the family 
