@@ -55,7 +55,7 @@ const mapMulti = (param) =>{
     data-wow-duration="1s"
     styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
   >
-    <div className="py-8 px-12 mb-12 bg-slate-300 rounded-2xl shadow-2xl transform transition duration-300 ease-in-out hover:-translate-y-2">
+    <div className="py-8 px-12 mb-12 bg-slate-300 rounded-2xl shadow-2xl transform transition duration-300 ease-in-out dark:shadow-primary hover:-translate-y-2">
       <div className="inline-block text-gray-900 mb-4">
         {item.svg}
       </div>
