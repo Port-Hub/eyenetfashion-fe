@@ -112,7 +112,7 @@ const mapMulti = (param) => {
         <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
           {item.title}
         </h3>
-        <p className="text-gray-500">{mapChild(item.points)}</p>
+        <p className="text-gray-500 text-left">{mapChild(item.points)}</p>
         <h5 className="text-lg leading-normal mt-2 text-black">{item.extra}</h5>
       </div>
     </div>

@@ -124,7 +124,7 @@ const mapPhoto = (param) =>{
       <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
         {item.title}
       </h3>
-      <p className="text-gray-500">
+      <p className="text-gray-500 text-left">
         {mapChild(item.points)}
       </p>
     </div>
