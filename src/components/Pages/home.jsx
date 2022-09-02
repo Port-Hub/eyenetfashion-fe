@@ -7,7 +7,11 @@ const Home = () => {
         <Canvas>
             <Suspense fallback={null} >
                 <OrbitControls />
-                <Environment preset="dawn" background />
+                <Environment 
+                    background
+                    files={"Apartment.hdr"}
+                    path={"/home/"}
+                        />
             </Suspense>
         </Canvas>
     )
