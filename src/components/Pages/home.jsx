@@ -5,11 +5,16 @@ import { Suspense,Component } from "react";
 class Env extends Component {
     render() {
         return(
-            <Environment
-                background
-                files={this.props.file}
-                path={"/home/"}
-                />
+            <Canvas className={this.props.tail}>
+                <Suspense fallback={null} >
+                    <OrbitControls enableZoom={true} enablePan={false} />
+                    <Environment
+                    background
+                    files={this.props.file}
+                    path={"/home/"}
+                    />
+                </Suspense>
+            </Canvas>
         )
     }
 }
@@ -17,58 +22,62 @@ class Env extends Component {
 const hdrArray = [
     {
         name:"Apartment",
-        file:"Apartment.hdr"
+        fname:"Apartment.hdr"
     },
     {
         name:"Forest",
-        file:"Forest.hdr"
+        fname:"Forest.hdr"
     },
     {
         name:"Sunset",
-        file:"Sunset.hdr"
+        fname:"Sunset.hdr"
     },
     {
         name:"City",
-        file:"City.hdr"
+        fname:"City.hdr"
     },
     {
         name:"Park",
-        file:"Park.hdr"
+        fname:"Park.hdr"
     },
     {
         name:"Dawn",
-        file:"Dawn.hdr"
+        fname:"Dawn.hdr"
     },
     {
         name:"Lobby",
-        file:"Lobby.hdr"
+        fname:"Lobby.hdr"
     },
     {
         name:"Night",
-        file:"Night.hdr"
+        fname:"Night.hdr"
     },
     {
         name:"Studio",
-        file:"Studio.hdr"
+        fname:"Studio.hdr"
     },
     {
         name:"Warehouse",
-        file:"Warehouse.hdr"
+        fname:"Warehouse.hdr"
     }
 ]
 
-const mapHDR = (param) => <Env file={param.file} />
+const mapHDR = (param) => {
+    return(
+        param.map((item,index) => (
+            <Env tail="h-96" key={index} file={item.fname} />
+            )
+        )
+    )
+}
 
-const hdrList = mapHDR(hdrArray)
+const hdrList = mapHDR(hdrArray);
 
 const Home = () => {
     return(
-        <Canvas>
-            <Suspense fallback={null} >
-                <OrbitControls />
-                {hdrList}
-            </Suspense>
-        </Canvas>
+        <>
+            {hdrList}
+        </>
     )
 }
 
