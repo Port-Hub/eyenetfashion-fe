@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="flex flex-wrap flex-row -mx-4 justify-center items-center">
       <div className="flexbasis-1/2  items-center justify-center">
-        <svg
+        {/* <svg
           preserveAspectRatio="xMaxYMid meet" 
           viewBox="0 0 894 448"
           id="Layer_1"
@@ -124,9 +124,9 @@ const Contact = () => {
             className="cls-3"
             d="m283.765 190.315.026-32.863-19.317 1.726 6.817 20.727-24.747 37.514a8.173 8.173 0 1 0 9.89 6.888Z"
           />
-        </svg>
+        </svg> */}
 
-        {/* <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           width="800"
           height="401.127"
@@ -233,7 +233,7 @@ const Contact = () => {
             fill="#ffb6b6"
             d="M283.765 190.315l.026-32.863-19.317 1.726 6.817 20.727-24.747 37.514a8.173 8.173 0 109.89 6.888z"
           ></path>
-        </svg> */}
+        </svg>
       </div>
       <div className="basis-1/2  pt-10 pr-15 ">
         <div className="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
