@@ -14,15 +14,15 @@ import Pg8img1 from "../../../assets/beautician/Mehandi_Style.jpg";
 const Beautician = () => {
   return (
     <div className="flex flex-row">
-      <div className="basis-1/5">
-        <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
-          <div class="fixed flex flex-col top-0 left-0 w-120 bg-#E6E6BF h-90% ">
-            <div class="flex items-center justify-center h-14 border-b"></div>
-            <div class="overflow-y-auto overflow-x-hidden flex-grow">
-              <ul class="flex flex-col py-4 space-y-1">
-                <li class="px-5">
-                  <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">
+      <div className="basis-1/3">
+        <div className="min-h-screen min-w-max flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
+          <div className="flex flex-col top-0 left-0 w-100 bg-#E6E6BF h-90% pt-0">
+            <div className="flex items-center justify-center h-14"></div>
+            <div className="overflow-y-auto overflow-x-hidden flex-grow">
+              <ul className="flex flex-col py-4 space-y-1">
+                <li className="px-5">
+                  <div className="flex flex-row items-center h-8">
+                    <div className="text-lg font-light tracking-wide text-neutral">
                       Diploma Courses
                     </div>
                   </div>
@@ -30,9 +30,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={25.8057}
@@ -46,7 +46,7 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Advance Diploma in Beauty Therapy
                     </span>
                   </a>
@@ -54,9 +54,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={25.8057}
@@ -70,14 +70,14 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Diploma in Aroma Therapy
                     </span>
                   </a>
                 </li>
-                <li class="px-5">
-                  <div class="flex flex-row items-center h-8">
-                    <div class="text-sm font-light tracking-wide text-gray-500">
+                <li className="px-5">
+                  <div className="flex flex-row items-center h-8">
+                    <div className="text-lg font-light tracking-wide text-neutral">
                       Certificate Courses
                     </div>
                   </div>
@@ -85,9 +85,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={26.2506}
@@ -112,7 +112,7 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Certificate Course in Beautician
                     </span>
                   </a>
@@ -120,9 +120,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={26.2506}
@@ -147,10 +147,10 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Certificate in Hair Care
                     </span>
-                    {/* <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
+                    {/* <span className="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
                       15
                     </span> */}
                   </a>
@@ -158,9 +158,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={26.2506}
@@ -185,10 +185,10 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Certificate in Hair Stylist
                     </span>
-                    {/* <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
+                    {/* <span className="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
                       15
                     </span> */}
                   </a>
@@ -196,9 +196,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={26.2506}
@@ -223,10 +223,10 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Certificate in Makeup Stylist
                     </span>
-                    {/* <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
+                    {/* <span className="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
                       15
                     </span> */}
                   </a>
@@ -234,9 +234,9 @@ const Beautician = () => {
                 <li>
                   <a
                     href="#"
-                    class="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                    className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
                   >
-                    <span class="inline-flex justify-center items-center ml-4">
+                    <span className="inline-flex justify-center items-center ml-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={26.2506}
@@ -261,10 +261,10 @@ const Beautician = () => {
                         </g>
                       </svg>
                     </span>
-                    <span class="ml-2 text-sm tracking-wide truncate">
+                    <span className="ml-2 text-sm tracking-wide truncate">
                       Certificate in Beauty Stylist
                     </span>
-                    {/* <span class="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
+                    {/* <span className="px-2 py-0.5 ml-auto text-xs font-medium tracking-wide text-green-500 bg-green-50 rounded-full">
                       15
                     </span> */}
                   </a>
@@ -274,13 +274,16 @@ const Beautician = () => {
           </div>
         </div>
       </div>
-      <div className="basis-3/4">
-        <h4>Best Training Institute for Beautician Courses</h4>
+      <div className="basis-2/3">
+      <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10">
+                <span>Best</span> <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">Training Institute</span> <span>for Beautician Courses</span>
+            </h1>
         {/* <img src={Pg1img1} />
     <img src={Pg1img2} />
     <img src={Pg1img3} />
     <img src={Pg1img4} />
     <img src={Pg1img5} /> */}
+        <div className="prose-lg">
         <br />
         A thing of Beauty is a Joy Forever. True to its sense, looking at
         beautiful things always gives pleasure or joy to everyone. Every person
@@ -313,6 +316,7 @@ const Beautician = () => {
         institute and provide employment to others. Being a Career in Beautician
         is a respectable profession with a very high earnings.
         <br />
+        </div>
       </div>
     </div>
   );
