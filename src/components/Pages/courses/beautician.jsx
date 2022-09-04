@@ -13,10 +13,11 @@ import Pg8img1 from "../../../assets/beautician/Mehandi_Style.jpg";
 
 const Beautician = () => {
   return (
-    <div className="flex flex-row">
-      <div className="basis-1/3">
+    <div className="container mx-auto px-0 py-0 items-center">
+    <div className="flex flex-row flex-wrap-reverse flex-grow content-evenly " >
+      <div className="basis-1/4">
         <div className="min-h-screen min-w-max flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
-          <div className="flex flex-col top-0 left-0 w-100 bg-#E6E6BF h-90% pt-0">
+          <div className="flex flex-col top-0 left-0 w-100 bg-#E6E6BF sh-50% pt-0">
             <div className="flex items-center justify-center h-14"></div>
             <div className="overflow-y-auto overflow-x-hidden flex-grow">
               <ul className="flex flex-col py-4 space-y-1">
@@ -274,7 +275,7 @@ const Beautician = () => {
           </div>
         </div>
       </div>
-      <div className="basis-2/3">
+      <div className="basis-3/4  ">
       <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10">
                 <span>Best</span> <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">Training Institute</span> <span>for Beautician Courses</span>
             </h1>
@@ -283,7 +284,7 @@ const Beautician = () => {
     <img src={Pg1img3} />
     <img src={Pg1img4} />
     <img src={Pg1img5} /> */}
-        <div className="prose-lg">
+        <div className="lg:prose-xl lg:text-left pr-0 text-left sm:prose-md sm:text-center lg:pl-0 sm:pl-10 justify-center content-evenly">
         <br />
         A thing of Beauty is a Joy Forever. True to its sense, looking at
         beautiful things always gives pleasure or joy to everyone. Every person
@@ -318,6 +319,7 @@ const Beautician = () => {
         <br />
         </div>
       </div>
+    </div>
     </div>
   );
 };
