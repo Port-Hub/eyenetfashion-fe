@@ -1,11 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Center, Environment, OrbitControls, Text3D } from "@react-three/drei";
 import { Suspense,Component } from "react";
 
 class Env extends Component {
     render() {
         return(
-            <Canvas className={this.props.tail}>
+            <Canvas>
                 <Suspense fallback={null} >
                     <OrbitControls enableZoom={true} enablePan={false} />
                     <Environment
@@ -82,7 +82,8 @@ const hdrList = mapHDR(hdrArray);
 const Home = () => {
     return(
         <>
-            <Env file={hdrArray[Random()].fname} />
+            {/* <Env file={hdrArray[Random()].fname} head={hdrArray[Random()].name} /> */}
+            <Env file={['Left.jpg','RCenter.jpg','Top.jpg','Bottom.jpg','Right.jpg','LCenter.jpg']} />
         </>
     )
 }
