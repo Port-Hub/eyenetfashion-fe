@@ -11,7 +11,7 @@ class Env extends Component {
                     <Environment
                     background
                     files={this.props.file}
-                    path={"/home/"}
+                    path={"/"}
                     />
                 </Suspense>
             </Canvas>
@@ -65,18 +65,24 @@ const hdrArray = [
 const mapHDR = (param) => {
     return(
         param.map((item,index) => (
-            <Env tail="h-96" key={index} file={item.fname} />
+            <Env key={index} file={item.fname} />
             )
         )
     )
 }
+
+const Random = () => { 
+    return (
+        Math.floor((Math.random())*10)
+    )
+};
 
 const hdrList = mapHDR(hdrArray);
 
 const Home = () => {
     return(
         <>
-            {hdrList}
+            <Env file={hdrArray[Random()].fname} />
         </>
     )
 }
