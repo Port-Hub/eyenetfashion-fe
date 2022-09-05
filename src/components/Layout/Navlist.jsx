@@ -8,10 +8,9 @@ import Fashion from "../Pages/courses/fashion";
 import Multimedia from "../Pages/courses/multimedia";
 import Photography from "../Pages/courses/photography";
 import Spoken from "../Pages/courses/spokeneng";
-import Events from "../Pages/news/events";
-import Workshop from "../Pages/news/workshop";
-import Honour from "../Pages/students/honour";
-import Portfolio from "../Pages/students/portfolio";
+import Workshop from "../Pages/workshop";
+import Honour from "../Pages/honour";
+
 
 const mapChild = (param) => {
     return (
@@ -63,6 +62,16 @@ const childArray = [
         name:"Gallery",
         to:"gallery",
         func:<Gallery />
+    },
+    {
+        name:"Roll of Honour",
+        to:"rollofhonour",
+        func:<Honour />
+    },
+    {
+        name:"Workshops & Seminar",
+        to:"workshop",
+        func:<Workshop />
     }
     ];
 const parentArray = [
@@ -98,36 +107,6 @@ const parentArray = [
                 name:"Beautician Courses",
                 to:"beautician",
                 func:<Beautician />
-            }
-        ]
-    },
-    {
-        name:"Students Zone",
-        Array:[
-            {
-                name:"Portfolio",
-                to:"portfolio",
-                func:<Portfolio />
-            },
-            {
-                name:"Roll of Honour",
-                to:"rollofhonour",
-                func:<Honour />
-            }
-        ]
-    },
-    {
-        name:"News & Events",
-        Array:[
-            {
-                name:"Workshops & Seminar",
-                to:"workshop",
-                func:<Workshop />
-            },
-            {
-                name:"Fashion Events",
-                to:"events",
-                func:<Events />
             }
         ]
     }
