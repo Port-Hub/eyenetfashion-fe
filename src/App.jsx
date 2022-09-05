@@ -1,22 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Header/navbar';
-import Footer from './components/Footer/footer';
+import Layout from "./components/Layout/Layout";
 import Home from "./components/Pages/home";
 import Contact from "./components/Pages/contact";
-import { childRoute,parentRoute } from "./components/Header/Navlist";
+import { childRoute,parentRoute } from "./components/Layout/Navlist";
 
 const App = () => {
 
   return (
     <Router>
-      <Navbar />
+      <Layout>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           {childRoute}
           {parentRoute}
           <Route exact path="/contact" element={<Contact />}></Route>
         </Routes>
-      <Footer />
+      </Layout>
     </Router>
   )
 }
