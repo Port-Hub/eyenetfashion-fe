@@ -5,16 +5,18 @@ import { Suspense,Component } from "react";
 class Env extends Component {
     render() {
         return(
-            <Canvas>
-                <Suspense fallback={null} >
-                    <OrbitControls enableZoom={true} enablePan={false} />
-                    <Environment
-                    background
-                    files={this.props.file}
-                    path={"/"}
-                    />
-                </Suspense>
-            </Canvas>
+            <div className="h-96">
+                <Canvas>
+                    <Suspense fallback={null} >
+                        <OrbitControls enableZoom={true} enablePan={false} />
+                        <Environment
+                        background
+                        files={this.props.file}
+                        path={"/"}
+                        />
+                    </Suspense>
+                </Canvas>
+            </div>
         )
     }
 }
