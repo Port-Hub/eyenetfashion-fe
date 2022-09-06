@@ -1,15 +1,15 @@
 import { Link, Route } from "react-router-dom";
-import About from "../Pages/about";
-import Infra from "../Pages/infra";
-import Gallery from "../Pages/gallery";
-import Beautician from "../Pages/courses/beautician";
-import Computer from "../Pages/courses/computer";
-import Fashion from "../Pages/courses/fashion";
-import Multimedia from "../Pages/courses/multimedia";
-import Photography from "../Pages/courses/photography";
-import Spoken from "../Pages/courses/spokeneng";
-import Workshop from "../Pages/workshop";
-import Honour from "../Pages/honour";
+import About from "../../pages/about";
+import Infra from "../../pages/infra";
+import Gallery from "../../pages/gallery";
+import Beautician from "../../pages/courses/beautician";
+import Computer from "../../pages/courses/computer";
+import Fashion from "../../pages/courses/fashion";
+import Multimedia from "../../pages/courses/multimedia";
+import Photography from "../../pages/courses/photography";
+import Spoken from "../../pages/courses/spokeneng";
+import Workshop from "../../pages/workshop";
+import Honour from "../../pages/honour";
 
 
 const mapChild = (param) => {

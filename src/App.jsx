@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./components/Pages/home";
-import Contact from "./components/Pages/contact";
-import { childRoute,parentRoute } from "./components/Layout/Navlist";
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+import { childRoute,parentRoute } from "./components/Layout/Routes";
 
 const App = () => {
 

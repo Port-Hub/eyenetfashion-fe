@@ -1,5 +1,5 @@
-import Left from "../../assets/about/Left.jpg";
-import Right from "../../assets/about/Right.jpg";
+import Left from "../assets/about/Left.jpg";
+import Right from "../assets/about/Right.jpg";
 
 const About = () => {
     return (
