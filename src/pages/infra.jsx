@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Library from "../assets/infra/Library.jpg";
 import Material1 from "../assets/infra/Material_1.jpg";
 import Material2 from "../assets/infra/Material_2.jpg";
@@ -15,98 +16,56 @@ import Demo4 from "../assets/infra/Demo_4.jpg";
 import Demo5 from "../assets/infra/Demo_5.jpg";
 import Demo6 from "../assets/infra/Demo_6.jpg";
 import Demo7 from "../assets/infra/Demo_7.jpg";
+import infrasvg from "../assets/infra/infrasvg.svg";
 
 const Infra = () => {
-    return (
-        <>
-            <span>Our Presence </span>
-
-            <p>
-                Because of providing quality education to the 
-                people and always maintaining the sense of commitment, 
-                NCFT Heights has succeeded to inculcate the sense of 
-                trust among the people, as a result within a short span 
-                of time, the Institute has set up more than 150 centres 
-                in South India.  
+  return (
+    <>
+      <section className=" dark:text-primary">
+        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <img
+              src={infrasvg}
+              alt=""
+              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            />
+          </div>
+          <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 className="text-5xl font-bold leading-none sm:text-6xl">
+              Our
+              <span className="dark:text-violet-400"> Presence</span>
+            </h1>
+            <p className="mt-6 mb-8 text-lg sm:mb-12">
+              Because of providing quality education to the people and always
+              maintaining the sense of commitment, NCFT Heights has succeeded to
+              inculcate the sense of trust among the people
+              <br className="hidden md:inline lg:hidden" />, as a result within
+              a short span of time, the Institute has set up more than 150
+              centres in South India.
             </p>
-
-            <span>Library</span>
-
-            <img src={Library} alt="eyenetfashion" />
-
-            <p>
-                Our Centre has Excellent Library facility, well stocked 
-                with extensive collection of important, rare otherwise 
-                notable books and multiple copies of text and reference 
-                books in all areas of Computer, Fashion and Communication 
-                Skills Development Programme.  Reference books are 
-                available with a range of subjects including Encyclopedia 
-                Dictionaries, Trade and other Directories. Online 
-                reference is also readily available at any time.
-            </p>
-
-            <span>Course Material</span>
-
-            <p>Our experts update our course time to time.  Institute 
-                has its own various titles of books and all related 
-                subjects, they are Design Ideas, Embroidery Techniques, 
-                Indian Embroidery, History of Fashion, Fashion Art & 
-                Illustration, Apparel Merchandising, Textile Science, 
-                Drafting, Pattern Making & Sketching.  All faculty 
-                related manuals with 100% detailed curriculum is also 
-                a exclusive feature of the Institute.  Faculties get 
-                support by transparencies & Chart. Constant updation 
-                to workout with overall result oriented courses.
-            </p>
-
-            <img src={Material1} width="150" height="212" />
-            <img src={Material2} width="150" height="212" />
-            <img src={Material3} width="150" height="212" />
-            <img src={Material4} width="150" height="212" />
-
-
-            <img src={Material5} width="150" height="212" />
-            <img src={Material6} width="150" height="212" />
-
-            <img src={Material7} width="150" height="212" />
-            <img src={Material8} width="150" height="212" />
-
-            <span>Computer Lab</span><br />
-
-            <img src={Lab} width="201" height="150" />
-
-            <p>
-                Eye-net has the most Modern & Sophisticated Computer lab. 
-                With a large number of Computers with Multi-Dimensional 
-                Facilities. A wide range of courses are available, ranging 
-                from highly-specialized to every day essentials like Office 
-                software, e-mail and Internet applications. Dictionaries, 
-                Trade and other Directories. Computer Faculty is available 
-                to help readers to make the best use of the resources and 
-                services offered.
-            </p>
-
-            <span>Demo Room</span>
-
-            <p>
-            The Demo Room of the institute plays a vital role to keep the 
-            students in touch with the latest and well equipped with modern 
-            teaching aids & highly configured systems, after the demonstration, 
-            it becomes easier for the student to understand his/her subject 
-            matter properly. 
-            </p>
-
-            <img src={Demo1} width="220" height="150" />
-            <img src={Demo2} width="88" height="150" />
-            <img src={Demo3} width="188" height="150" />
-            <img src={Demo4} width="182" height="150" />
-
-            <img src={Demo5} alt="eyenetfashion" />
-            <img src={Demo6} alt="eyenetfashion"  />
-            <img src={Demo7}  alt="eyenetfashion" />
-
-        </>
-    )
-}
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+              >
+                Explore
+              </a>
+              <a
+                rel="noopener noreferrer"
+                href="#"
+                className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100"
+              >
+                <Link to="/virtual">
+                Virtual Tour
+                </Link>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default Infra;
