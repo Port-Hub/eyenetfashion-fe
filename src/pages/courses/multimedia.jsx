@@ -1,3 +1,4 @@
+import mulmediasvg from "../../assets/multimedia/mulmediasvg.svg"
 const multiArray = [
   {
     title: "Level - 1",
@@ -124,9 +125,16 @@ const multiList = mapMulti(multiArray);
 const Multimedia = () => {
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold py-6">
+      <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10 text-center">
         Multimedia Training
       </h1>
+      <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        <img
+          src={mulmediasvg}
+          alt=""
+          className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+        />
+      </div>
       <div className="section pt-20 pb-8 md:pt-16 md:pb-0">
         <div className="container xl:max-w-15xl mx-auto px-4">
           <div className="flex flex-wrap flex-row -mx-4 text-center">

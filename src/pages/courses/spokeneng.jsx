@@ -1,3 +1,4 @@
+import spokensvg from "../../assets/spokeneng/spokenengsvg.svg"
 const spokenArray = [
   {
     title: "Basic English",
@@ -202,9 +203,16 @@ const Spoken = () => {
     <>
     <div className="container mx-auto">
       <div className="">
-      <h1 className=" mb-8 text-4xl font-extrabold block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline md:text-6xl md:tracking-tight pt-10">
+      <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10 text-center">
         Spoken English 
       </h1>
+      </div>
+      <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        <img
+          src={spokensvg}
+          alt=""
+          className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+        />
       </div>
       <p className="prose-h3 px-6 pt-5">
         Today is the age of globalisation it is difficult for one to
