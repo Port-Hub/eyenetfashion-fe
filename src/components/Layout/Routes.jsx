@@ -2,7 +2,7 @@ import { Link, Route } from "react-router-dom";
 import About from "../../pages/about";
 import Infra from "../../pages/infra";
 import Gallery from "../../pages/gallery";
-import Beautician from "../../pages/courses/beautician";
+import Beautician from "../../pages/courses/beauticiancourses/beautician";
 import Computer from "../../pages/courses/computer";
 import Fashion from "../../pages/courses/fashion";
 import Multimedia from "../../pages/courses/multimedia";

@@ -33,7 +33,7 @@ const Infra = () => {
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">
               Our
-              <span className="dark:text-violet-400"> Presence</span>
+              <span className="text-violet-400"> Presence</span>
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">
               Because of providing quality education to the people and always
@@ -47,10 +47,11 @@ const Infra = () => {
               <a
                 rel="noopener noreferrer"
                 href="#"
-                className="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
+                className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 text-gray-900"
               >
                 Explore
               </a>
+              
               <a
                 rel="noopener noreferrer"
                 href="#"
