@@ -200,12 +200,15 @@ const spokenList = mapSpoken(spokenArray);
 const Spoken = () => {
   return (
     <>
-      <h1 className="text-center text-4xl font-semibold py-6">
-        Spoken English
+    <div className="container mx-auto">
+      <div className="">
+      <h1 className=" mb-8 text-4xl font-extrabold block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline md:text-6xl md:tracking-tight pt-10">
+        Spoken English 
       </h1>
-      <p className="prose-h3 px-6">
+      </div>
+      <p className="prose-h3 px-6 pt-5">
         Today is the age of globalisation it is difficult for one to
-        remainconnected with the rest of the worldwithout English Knowledge.
+        remain connected with the rest of the world without English Knowledge.
         Further English Speaking prople have an edge over others in the job
         market. And having this knowledge also gives you a passport tp break
         into higher circles of the society. Further it is needless to say that
@@ -217,6 +220,7 @@ const Spoken = () => {
             {spokenList}
           </div>
         </div>
+      </div>
       </div>
     </>
   );
