@@ -98,14 +98,14 @@ const Beautician = () => {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
           <div className="min-h-90% flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-gray-800">
-            <div className="fixed flex flex-col top-0 left-0 w-64 bg-white h-full">
+            <div className="fixed flex flex-col top-0 left-0 w-30 bg-white h-full">
               <div className="flex items-center justify-center h-14">
               </div>
               <div className="overflow-y-auto overflow-x-hidden flex-grow">
                 <ul className="flex flex-col py-4 space-y-1">
                   <li className="px-5">
                     <div className="flex flex-row items-center h-8">
-                      <div className="text-sm font-light tracking-wide text-gray-500">
+                      <div className="text-md font-semibold tracking-wide text-primary">
                         Diploma Courses
                       </div>
                     </div>
@@ -113,7 +113,7 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                       </span>
@@ -125,7 +125,7 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent  hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                         
@@ -135,9 +135,10 @@ const Beautician = () => {
                       </span>
                     </a>
                   </li>
+                  
                   <li className="px-5">
                     <div className="flex flex-row items-center h-8">
-                      <div className="text-sm font-light tracking-wide text-gray-500">
+                      <div className="text-md font-semibold tracking-wide text-primary">
                         Certificate Courses
                       </div>
                     </div>
@@ -145,7 +146,7 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-1 hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                       </span>
@@ -157,11 +158,11 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                       </span>
-                      <span className="ml-2 text-sm tracking-wide truncate">
+                      <span className="ml-2 text-sm tracking-wide ">
                       Certificate in Hair Care
                       </span>
                   
@@ -170,11 +171,11 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                       </span>
-                      <span className="ml-2 text-sm tracking-wide truncate">
+                      <span className="ml-2 text-sm tracking-wide ">
                       Certificate in Hair Stylist
                       </span>
                     </a>
@@ -182,12 +183,12 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                 
                       </span>
-                      <span className="ml-2 text-sm tracking-wide truncate">
+                      <span className="ml-2 text-sm tracking-wide ">
                       Certificate in Makeup Stylist
                       </span>
                     </a>
@@ -195,11 +196,11 @@ const Beautician = () => {
                   <li>
                     <a
                       href="#"
-                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-indigo-500 pr-6"
+                      className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4">
                       </span>
-                      <span className="ml-2 text-sm tracking-wide truncate">
+                      <span className="ml-2 text-sm tracking-wide ">
                       Certificate in Beauty Stylist
                       </span>
                     </a>
