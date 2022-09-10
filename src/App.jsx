@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
+import Virtual from "./pages/virtual";
 import { childRoute,parentRoute } from "./components/Layout/Routes";
 
 const App = () => {
 
   return (
     <Router>
-      <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          {childRoute}
-          {parentRoute}
-          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route element={<Layout> <Outlet /> </Layout>} >
+            <Route exact path="/" element={<Home />}></Route>
+            {childRoute}
+            {parentRoute}
+            <Route exact path="/contact" element={<Contact />}></Route>
+          </Route>
+          <Route exact path="/virtual" element={<Virtual />}></Route>
         </Routes>
-      </Layout>
     </Router>
   )
 }
