@@ -111,9 +111,47 @@ const parentArray = [
         ]
     }
 ]
+const beauticianArray = [
+    {
+      name: "Advance Diploma in Beauty Therapy",
+      to: "beautytherapy",
+      func: <Beautytherapy />,
+    },
+    {
+      name: "Diploma in Aroma Therapy",
+      to: "aromatherapy",
+      func: <Aromatherapy />,
+    },
+    {
+      name: "Certificate Course in Beautician",
+      to: "beauticiancertificate",
+      func: <Beauticiandiploma />,
+    },
+    {
+      name: "Certificate in Hair Care",
+      to: "haircare",
+      func: <Haircare />,
+    },
+    {
+      name: "Certificate in Hair Stylist",
+      to: "hairstylist",
+      func: <Hairstylist />,
+    },
+    {
+      name: "Certificate in Makeup Stylist",
+      to: "makeupstylist",
+      func: <Makeupstylist />,
+    },
+    {
+      name: "Certificate in Beauty Stylist",
+      to: "beautystylist",
+      func: <Beautystylist />,
+    },
+  ];
 
 export const childRoute =mapRoute(childArray);
 export const parentRoute= parentArray.map((item) => mapRoute(item.Array));
+export const beauticianRoute = mapRoute(beauticianArray);
 
 const Navlist = () => {
     const childList = mapChild(childArray);

@@ -3,57 +3,15 @@ import Pg1img2 from "../../../assets/beautician/Parlour_Infra_1.jpg";
 import Pg1img3 from "../../../assets/beautician/Parlour_Infra.jpg";
 import Pg1img4 from "../../../assets/beautician/Parlour_Infra_2.jpg";
 import Pg1img5 from "../../../assets/beautician/Parlour_Infra_3.jpg";
-import Beautytherapy from "./beautytherapy";
-import Aromatherapy from "./aromatherapy";
-import Beauticiandiploma from "./beauticiandiploma";
-import Haircare from "./haircare";
-import Hairstylist from "./hairstylist";
-import Makeupstylist from "./makeupstylist";
-import Beautystylist from "./beautystylist";
-import { Route, Routes,Link } from "react-router-dom";
-const childArray = [
-  {
-    name: "Advance Diploma in Beauty Therapy",
-    to: "beautytherapy",
-    func: <Beautytherapy />,
-  },
-  {
-    name: "Diploma in Aroma Therapy",
-    to: "aromatherapy",
-    func: <Aromatherapy />,
-  },
-  {
-    name: "Certificate Course in Beautician",
-    to: "beauticiancertificate",
-    func: <Beauticiandiploma />,
-  },
-  {
-    name: "Certificate in Hair Care",
-    to: "haircare",
-    func: <Haircare />,
-  },
-  {
-    name: "Certificate in Hair Stylist",
-    to: "hairstylist",
-    func: <Hairstylist />,
-  },
-  {
-    name: "Certificate in Makeup Stylist",
-    to: "makeupstylist",
-    func: <Makeupstylist />,
-  },
-  {
-    name: "Certificate in Beauty Stylist",
-    to: "beautystylist",
-    func: <Beautystylist />,
-  },
-];
-const mapRoute = (param) => {
-  return param.map((item, index) => (
-      <Route key={index} exact path={"/beautician/"+item.to} element={item.func}></Route>
-  ));
-};
-export const beautRoute = mapRoute(childArray);
+import Beautytherapy from "./beauticiancourses/beautytherapy";
+import Aromatherapy from "./beauticiancourses/aromatherapy";
+import Beauticiandiploma from "./beauticiancourses/beauticiandiploma";
+import Haircare from "./beauticiancourses/haircare";
+import Hairstylist from "./beauticiancourses/hairstylist";
+import Makeupstylist from "./beauticiancourses/makeupstylist";
+import Beautystylist from "./beauticiancourses/beautystylist";
+import { Link } from "react-router-dom";
+
 const Beautician = () => {
   return (<>    
     <div className="drawer">
@@ -155,7 +113,6 @@ const Beautician = () => {
                       </div>
                     </div>
                   </li>
-                  {/* <Link to="beautytherapy"> */}
                     <li>
                       <a className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6">
                         <span className="inline-flex justify-center items-center ml-4"></span>
@@ -165,8 +122,6 @@ const Beautician = () => {
                         </span>
                       </a>
                     </li>
-                  {/* </Link>
-                  <Link to="/beautician/aromatherapy"> */}
                   <li>
                     <a
                       href="#"
@@ -178,7 +133,6 @@ const Beautician = () => {
                       </span>
                     </a>
                   </li>
-                  {/* </Link> */}
                   <li className="px-5">
                     <div className="flex flex-row items-center h-8">
                       <div className="text-md font-semibold tracking-wide text-primary">

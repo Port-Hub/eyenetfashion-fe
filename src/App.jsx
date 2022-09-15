@@ -3,7 +3,8 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Virtual from "./pages/virtual";
-import { childRoute,parentRoute } from "./components/Layout/Routes";
+import Beautician from "./pages/courses/beautician";
+import { childRoute,parentRoute, beauticianRoute } from "./components/Layout/Routes";
 
 const App = () => {
 
@@ -14,6 +15,9 @@ const App = () => {
             <Route exact path="/" element={<Home />}></Route>
             {childRoute}
             {parentRoute}
+            <Route element={<Beautician><Outlet /></Beautician>} >
+              {beauticianRoute}
+            </Route>
             <Route exact path="/contact" element={<Contact />}></Route>
           </Route>
           <Route exact path="/virtual" element={<Virtual />}></Route>
