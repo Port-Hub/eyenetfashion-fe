@@ -2,7 +2,7 @@ import { Link, Route } from "react-router-dom";
 import About from "../../pages/about";
 import Infra from "../../pages/infra";
 import Gallery from "../../pages/gallery";
-import Beautician from "../../pages/courses/beauticiancourses/beautician";
+import Beautician from "../../pages/courses/beautician";
 import Computer from "../../pages/courses/computer";
 import Fashion from "../../pages/courses/fashion";
 import Multimedia from "../../pages/courses/multimedia";
@@ -10,6 +10,13 @@ import Photography from "../../pages/courses/photography";
 import Spoken from "../../pages/courses/spokeneng";
 import Workshop from "../../pages/workshop";
 import Honour from "../../pages/honour";
+import Beautytherapy from "../../pages/courses/beauticiancourses/beautytherapy";
+import Aromatherapy from "../../pages/courses/beauticiancourses/aromatherapy";
+import Beauticiandiploma from "../../pages/courses/beauticiancourses/beauticiandiploma";
+import Haircare from "../../pages/courses/beauticiancourses/haircare";
+import Hairstylist from "../../pages/courses/beauticiancourses/hairstylist";
+import Makeupstylist from "../../pages/courses/beauticiancourses/makeupstylist";
+import Beautystylist from "../../pages/courses/beauticiancourses/beautystylist";
 
 
 const mapChild = (param) => {
@@ -114,37 +121,37 @@ const parentArray = [
 const beauticianArray = [
     {
       name: "Advance Diploma in Beauty Therapy",
-      to: "beautytherapy",
+      to: "beautician/diploma",
       func: <Beautytherapy />,
     },
     {
       name: "Diploma in Aroma Therapy",
-      to: "aromatherapy",
+      to: "beautician/aromatherapy",
       func: <Aromatherapy />,
     },
     {
       name: "Certificate Course in Beautician",
-      to: "beauticiancertificate",
+      to: "beautician/certificate",
       func: <Beauticiandiploma />,
     },
     {
       name: "Certificate in Hair Care",
-      to: "haircare",
+      to: "beautician/haircare",
       func: <Haircare />,
     },
     {
       name: "Certificate in Hair Stylist",
-      to: "hairstylist",
+      to: "beautician/hairstylist",
       func: <Hairstylist />,
     },
     {
       name: "Certificate in Makeup Stylist",
-      to: "makeupstylist",
+      to: "beautician/makeupstylist",
       func: <Makeupstylist />,
     },
     {
       name: "Certificate in Beauty Stylist",
-      to: "beautystylist",
+      to: "beautician/beautystylist",
       func: <Beautystylist />,
     },
   ];

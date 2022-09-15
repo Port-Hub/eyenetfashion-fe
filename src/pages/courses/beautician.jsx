@@ -1,15 +1,8 @@
-import Pg1img1 from "../../../assets/beautician/Beautician_1.jpg";
-import Pg1img2 from "../../../assets/beautician/Parlour_Infra_1.jpg";
-import Pg1img3 from "../../../assets/beautician/Parlour_Infra.jpg";
-import Pg1img4 from "../../../assets/beautician/Parlour_Infra_2.jpg";
-import Pg1img5 from "../../../assets/beautician/Parlour_Infra_3.jpg";
-import Beautytherapy from "./beauticiancourses/beautytherapy";
-import Aromatherapy from "./beauticiancourses/aromatherapy";
-import Beauticiandiploma from "./beauticiancourses/beauticiandiploma";
-import Haircare from "./beauticiancourses/haircare";
-import Hairstylist from "./beauticiancourses/hairstylist";
-import Makeupstylist from "./beauticiancourses/makeupstylist";
-import Beautystylist from "./beauticiancourses/beautystylist";
+import Pg1img1 from "../../assets/beautician/Beautician_1.jpg";
+import Pg1img2 from "../../assets/beautician/Parlour_Infra_1.jpg";
+import Pg1img3 from "../../assets/beautician/Parlour_Infra.jpg";
+import Pg1img4 from "../../assets/beautician/Parlour_Infra_2.jpg";
+import Pg1img5 from "../../assets/beautician/Parlour_Infra_3.jpg";
 import { Link } from "react-router-dom";
 
 const Beautician = () => {
@@ -114,24 +107,24 @@ const Beautician = () => {
                     </div>
                   </li>
                     <li>
-                      <a className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6">
+                      <Link to="diploma" className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6">
                         <span className="inline-flex justify-center items-center ml-4"></span>
 
                         <span className="ml-2 text-sm tracking-wide">
                           Advance Diploma in Beauty Therapy
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="aromatherapy"
                       className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent  hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide">
                         Diploma in Aroma Therapy
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="px-5">
                     <div className="flex flex-row items-center h-8">
@@ -141,59 +134,59 @@ const Beautician = () => {
                     </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="certificate"
                       className="relative flex flex-row items-center h-11 focus:outline-1 hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide">
                         Certificate Course in Beautician
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="haircare"
                       className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide ">
                         Certificate in Hair Care
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="hairstylist"
                       className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide ">
                         Certificate in Hair Stylist
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="makeupstylist"
                       className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide ">
                         Certificate in Makeup Stylist
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="beautystylist"
                       className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-gray-50 text-gray-600 hover:text-gray-800 border-l-4 border-transparent hover:border-accent pr-6"
                     >
                       <span className="inline-flex justify-center items-center ml-4"></span>
                       <span className="ml-2 text-sm tracking-wide ">
                         Certificate in Beauty Stylist
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
