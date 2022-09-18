@@ -5,6 +5,7 @@ import Contact from "./pages/contact";
 import Virtual from "./pages/virtual";
 import Beautician from "./pages/courses/beautician";
 import { childRoute,parentRoute, beauticianRoute } from "./components/Layout/Routes";
+import Infraexplore from "./pages/infraexplore";
 
 const App = () => {
 
@@ -17,8 +18,10 @@ const App = () => {
             {parentRoute}
             {beauticianRoute}
             <Route exact path="/contact" element={<Contact />}></Route>
+            <Route exact path="/explore" element={<Infraexplore />}></Route>
           </Route>
           <Route exact path="/virtual" element={<Virtual />}></Route>
+
         </Routes>
     </Router>
   )
