@@ -1,7 +1,7 @@
 import { Link, Route } from "react-router-dom";
 import About from "../../pages/about";
 import Infra from "../../pages/infra";
-import Infraexplore from "../../pages/Infraexplore";
+import Infraexplore from "../../pages/infraexplore";
 import Gallery from "../../pages/gallery";
 import Beautician from "../../pages/courses/beautician";
 import Computer from "../../pages/courses/computer";
