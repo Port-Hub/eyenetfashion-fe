@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Navbar />
-            <Particle />
+            {/* <Particle /> */}
             <div>
             { children }
             </div>

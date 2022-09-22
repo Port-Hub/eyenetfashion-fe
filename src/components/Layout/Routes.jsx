@@ -13,11 +13,7 @@ import Workshop from "../../pages/workshop";
 import Honour from "../../pages/honour";
 import Beautytherapy from "../../pages/courses/beauticiancourses/beautytherapy";
 import Aromatherapy from "../../pages/courses/beauticiancourses/aromatherapy";
-import Beauticiandiploma from "../../pages/courses/beauticiancourses/beauticiandiploma";
-import Haircare from "../../pages/courses/beauticiancourses/haircare";
-import Hairstylist from "../../pages/courses/beauticiancourses/hairstylist";
-import Makeupstylist from "../../pages/courses/beauticiancourses/makeupstylist";
-import Beautystylist from "../../pages/courses/beauticiancourses/beautystylist";
+import Certificate from "../../pages/courses/beauticiancourses/certificate";
 
 
 const mapChild = (param) => {
@@ -136,29 +132,9 @@ const extraArray = [
       func: <Aromatherapy />,
     },
     {
-      name: "Certificate Course in Beautician",
+      name: "Certificate Courses",
       to: "beautician/certificate",
-      func: <Beauticiandiploma />,
-    },
-    {
-      name: "Certificate in Hair Care",
-      to: "beautician/haircare",
-      func: <Haircare />,
-    },
-    {
-      name: "Certificate in Hair Stylist",
-      to: "beautician/hairstylist",
-      func: <Hairstylist />,
-    },
-    {
-      name: "Certificate in Makeup Stylist",
-      to: "beautician/makeupstylist",
-      func: <Makeupstylist />,
-    },
-    {
-      name: "Certificate in Beauty Stylist",
-      to: "beautician/beautystylist",
-      func: <Beautystylist />,
+      func: <Certificate />,
     },
   ];
 

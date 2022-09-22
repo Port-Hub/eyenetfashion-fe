@@ -1,9 +1,6 @@
-const Aromatherapy = () =>{
-
-return(<>
-<h1>Aroma Therapy</h1>
-</>)
-
-
-}
-export default Aromatherapy
+const Aromatherapy = () => {
+  return (
+    <></>
+  );
+};
+export default Aromatherapy;
