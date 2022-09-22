@@ -1,6 +1,7 @@
 import { Link, Route } from "react-router-dom";
 import About from "../../pages/about";
 import Infra from "../../pages/infra";
+import Infraexplore from "../../pages/Infraexplore";
 import Gallery from "../../pages/gallery";
 import Beautician from "../../pages/courses/beautician";
 import Computer from "../../pages/courses/computer";
@@ -118,7 +119,12 @@ const parentArray = [
         ]
     }
 ]
-const beauticianArray = [
+const extraArray = [
+    {
+        name: "Infrastructure Explore",
+        to: "infrastructure/explore",
+        func: <Infraexplore />
+    },
     {
       name: "Advance Diploma in Beauty Therapy",
       to: "beautician/diploma",
@@ -158,7 +164,7 @@ const beauticianArray = [
 
 export const childRoute =mapRoute(childArray);
 export const parentRoute= parentArray.map((item) => mapRoute(item.Array));
-export const beauticianRoute = mapRoute(beauticianArray);
+export const extraRoute = mapRoute(extraArray);
 
 const Navlist = () => {
     const childList = mapChild(childArray);

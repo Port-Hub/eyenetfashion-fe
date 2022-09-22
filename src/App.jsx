@@ -3,9 +3,7 @@ import Layout from "./components/Layout/Layout";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Virtual from "./pages/virtual";
-import Beautician from "./pages/courses/beautician";
-import { childRoute,parentRoute, beauticianRoute } from "./components/Layout/Routes";
-import Infraexplore from "./pages/infraexplore";
+import { childRoute,parentRoute, extraRoute } from "./components/Layout/Routes";
 
 const App = () => {
 
@@ -16,9 +14,8 @@ const App = () => {
             <Route exact path="/" element={<Home />}></Route>
             {childRoute}
             {parentRoute}
-            {beauticianRoute}
+            {extraRoute}
             <Route exact path="/contact" element={<Contact />}></Route>
-            <Route exact path="/explore" element={<Infraexplore />}></Route>
           </Route>
           <Route exact path="/virtual" element={<Virtual />}></Route>
 

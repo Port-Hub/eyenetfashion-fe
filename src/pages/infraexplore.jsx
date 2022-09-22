@@ -1,7 +1,9 @@
-const Infraexplore = () =>{
-
-    return(<></>)
+const Infraexplore = () => {
+    return(
+        <>
+            Infra Explore
+        </>
+    )
+}
     
-    
-    }
-    export default Infraexplore
+export default Infraexplore;
