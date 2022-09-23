@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import certi from "../../../assets/certificate/certficate.svg";
 const Certificate = () => {
   return (
     <>
-      <div className="flex  justify-center h-full">
+      <div className="flex  justify-center h-full flex-wrap">
+        <div>
+          <img className="object-scale-down h-3/4 w-auto pl-10" src={certi}></img>
+          </div>
         <div className="bg-white">
-          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 " >
+          <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8 ">
             <h2 className="text-2xl font-semibold pb">Certificate Courses</h2>
             <div className="space-y-4">
               <details className="w-full rounded-lg ring-1 primary">
