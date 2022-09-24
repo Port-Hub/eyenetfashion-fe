@@ -3,10 +3,12 @@ import Right from "../assets/about/Right.jpg";
 
 const About = () => {
     return (
-        <>
+        <div className="flex flex-row gap-x-36">
+
             <img src={Left} width="128" height="330"/>
-            
-            <h4>The Concern - A Bird's Eye View...</h4>
+
+            <div className="">
+            <h4 className="text-violet-500">The Concern - A Bird's Eye View...</h4>
 
             <p>
                 The Eye-net, a renowned Training Center 
@@ -33,7 +35,7 @@ const About = () => {
                 Fashion Designing courses and English Communication Skill Development courses.
             </p>
 
-            <h4>Our Aim</h4>
+            <h4 className="text-violet-500">Our Aim</h4>
 
             <p>
                 The institute aims to train students to respond competently and confidently to 
@@ -47,7 +49,7 @@ const About = () => {
             </p>
 
 
-            <h4>Our Ventures</h4>
+            <h4 className="text-violet-500">Our Ventures</h4>
 
             <p>
                 NCFT Heights institute of Fashion & Technology is a venture of eye-net Computer Technology 
@@ -55,7 +57,7 @@ const About = () => {
                 Fashion Designing Courses, Multimedia Training & Export Management.
             </p>
 
-            <h4> BBC Style... a language school</h4>
+            <h4 className="text-violet-500"> BBC Style... a language school</h4>
 
             <p>
                 BBC Style came into existence to provide/facilitate the courses to 
@@ -63,7 +65,7 @@ const About = () => {
                 Communication Skill & Interview Preparation etc.
             </p>
 
-            <h4>Manuals & Booklets</h4>
+            <h4 className="text-violet-500">Manuals & Booklets</h4>
 
             <p>
                 In order to have smooth administration in the entrees, Institute has 
@@ -73,9 +75,10 @@ const About = () => {
                 knowledge to the people about these courses we have prepared different 
                 prospectus in Computer, Fashion and Communication Skills.
             </p>
+            </div>
 
             <img src={Right} width="128" height="330"/>
-        </>
+        </div>
     )
 }
 
