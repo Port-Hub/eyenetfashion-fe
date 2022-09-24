@@ -1,6 +1,7 @@
 import * as React from "react";
 import contact from "../assets/contactform/contactformsvg.svg";
 import { useRef } from "react";
+import Email from "../components/smtp";
 
 const Contact = () => {
 
@@ -10,6 +11,43 @@ const Contact = () => {
   const formInterest = useRef();
   const formDescription = useRef();
   const formAddress = useRef();
+
+  const saveName = () => {
+    const name = formName.current.value;
+  }
+
+  const saveEmail = () => {
+    const email = formName.current.value;
+  }
+
+  const saveNumber = () => {
+    const number = formName.current.value;
+  }
+
+  const saveInterest = () => {
+    const interest = formName.current.value;
+  }
+
+  const saveDescription = () => {
+    const description = formName.current.value;
+  }
+
+  const saveAddress = () => {
+    const address = formName.current.value;
+  }
+
+  const sendEmail = () => {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "srahuljayaraj@gmail.com",
+      Password: "",
+      To: 'srahuljayaraj@outlook.com',
+      From: "srahuljayaraj@gmail.com",
+      Subject: "Sending Email using javascript",
+      Body: "Well that was easy!!",
+    })
+  }
+
 
   return (
     <div className="flex flex-wrap flex-row -mx-4 justify-center items-center">
@@ -24,6 +62,7 @@ const Contact = () => {
                 <span className="text-primary">Name</span>
                 <input
                   ref={formName}
+                  onChange={saveName}
                   required
                   name="name"
                   type="text"
@@ -38,6 +77,7 @@ const Contact = () => {
                 <span className="text-primary">Email address</span>
                 <input
                   ref={formEmail}
+                  onChange={saveEmail}
                   required
                   name="email"
                   type="email"
@@ -52,6 +92,7 @@ const Contact = () => {
                 <span className="text-primary">Phone Number</span>
                 <input
                   ref={formNumber}
+                  onChange={saveNumber}
                   required
                   name="number"
                   type="number"
@@ -66,6 +107,7 @@ const Contact = () => {
                 <span className="text-primary">Course of interest</span>
                 <select
                   ref={formInterest}
+                  onChange={saveInterest}
                   required
                   name="experience"
                   className="
@@ -86,6 +128,7 @@ const Contact = () => {
                 <span className="text-primary">Enquiry description </span>
                 <textarea
                   ref={formDescription}
+                  onChange={saveDescription}
                   name="message"
                   className="
                     block w-full mt-1 border-gray-300 rounded-md
@@ -99,6 +142,7 @@ const Contact = () => {
                 <span className="text-primary">Address</span>
                 <textarea
                   ref={formAddress}
+                  onChange={saveAddress}
                   name="message"
                   className="
                     block w-full mt-1 border-gray-300 rounded-md
@@ -111,6 +155,7 @@ const Contact = () => {
               <div className="mb-6">
                 <button
                   type="submit"
+                  onClick={sendEmail}
                   className="
                     h-10 px-5 text-indigo-100 bg-indigo-700
                     rounded-lg transition-colors duration-150
