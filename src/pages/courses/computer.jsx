@@ -1,4 +1,4 @@
-import computer from "../../assets/Computer/computer.svg"
+import computer from "../../assets/computer/computer.svg"
 const Computer = () => {
   return (
     <>
