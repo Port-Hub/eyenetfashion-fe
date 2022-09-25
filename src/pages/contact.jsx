@@ -1,53 +1,37 @@
-import * as React from "react";
 import contact from "../assets/contactform/contactformsvg.svg";
 import { useRef } from "react";
-import Email from "../components/smtp";
 
 const Contact = () => {
 
-  const formName = useRef();
-  const formEmail = useRef();
-  const formNumber = useRef();
-  const formInterest = useRef();
-  const formDescription = useRef();
-  const formAddress = useRef();
+  const formName = useRef(); const formEmail = useRef();
+  const formNumber = useRef(); const formInterest = useRef();
+  const formDescription = useRef();const formAddress = useRef();
+
+  let name,email,number,interest,description,address;
 
   const saveName = () => {
-    const name = formName.current.value;
+    name = formName.current.value;
   }
 
   const saveEmail = () => {
-    const email = formName.current.value;
+    email = formName.current.value;
   }
 
   const saveNumber = () => {
-    const number = formName.current.value;
+    number = formName.current.value;
   }
 
   const saveInterest = () => {
-    const interest = formName.current.value;
+    interest = formName.current.value;
   }
 
   const saveDescription = () => {
-    const description = formName.current.value;
+    description = formName.current.value;
   }
 
   const saveAddress = () => {
-    const address = formName.current.value;
+    address = formName.current.value;
   }
-
-  const sendEmail = () => {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "srahuljayaraj@gmail.com",
-      Password: "",
-      To: 'srahuljayaraj@outlook.com',
-      From: "srahuljayaraj@gmail.com",
-      Subject: "Sending Email using javascript",
-      Body: "Well that was easy!!",
-    })
-  }
-
 
   return (
     <div className="flex flex-wrap flex-row -mx-4 justify-center items-center">
@@ -155,7 +139,6 @@ const Contact = () => {
               <div className="mb-6">
                 <button
                   type="submit"
-                  onClick={sendEmail}
                   className="
                     h-10 px-5 text-indigo-100 bg-indigo-700
                     rounded-lg transition-colors duration-150
