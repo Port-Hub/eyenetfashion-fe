@@ -1,5 +1,5 @@
 import computer from "../../assets/computer/computer.svg"
-const Computer = () => {
+const Computer: (arg: any) => JSX.Element = () => {
   return (
     <>
       <div className="flex  justify-center h-full flex-wrap">

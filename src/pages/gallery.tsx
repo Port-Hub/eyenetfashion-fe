@@ -1,4 +1,4 @@
-const Gallery = () => {
+const Gallery: (arg: any) => JSX.Element = () => {
     return (
         <h1>Gallery</h1>
     )

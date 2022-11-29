@@ -1,5 +1,5 @@
 import spokensvg from "../../assets/spokeneng/spokenengsvg.svg"
-const spokenArray = [
+const spokenArray: { title: String, points: String[], svg: JSX.Element }[] = [
   {
     title: "Basic English",
     points: [
@@ -14,9 +14,6 @@ const spokenArray = [
         width={40}
         height={40}
         viewBox="0,0,54,54"
-        style={{
-          enableBackground: "new 0 0 54.483 54.483",
-        }}
         xmlSpace="preserve"
       >
         <path d="M29.77 35.434h16.077v2.336H29.77v-2.336zm0-3.234h16.077v-2.336H29.77V32.2zm8.032-8.035H29.77V26.5h8.032v-2.335zm0-6.266H29.77v2.336h8.032v-2.336zM29.77 43.308h16.077v-2.336H29.77v2.336zm24.713-33.156v39.005H26.561v.055l-.236-.055H0V10.152h2.327v-4.88l22.134 4.88h30.022zm-2.029 18.125h-2.747v2.755h2.747v-2.755zM4.665 12.952v29.036l19.561 4.317V12.49l-10.609-2.34-8.952-1.975v4.777zm8.953 33.406L3.497 44.123v2.235h10.121zm12.943 0h21.121V12.954h-2.689V26.79l-2.835-2.628-2.829 2.628V12.954H26.563v33.404h-.002zm-4.202-29.829-10.736-3.575-3.765-1.253-.419 1.253-.325.962 14.5 4.828.745-2.215zm0 6.261-14.5-4.828-.739 2.217 14.501 4.828.738-2.217zm0 6.259-14.5-4.829-.739 2.217 14.501 4.829.738-2.217zm0 6.262-14.5-4.824-.739 2.215 14.501 4.824.738-2.215zm0 5.543-14.5-4.831-.74 2.217 14.501 4.829.739-2.215z" />
@@ -37,9 +34,6 @@ const spokenArray = [
         xmlns="http://www.w3.org/2000/svg"
         width={40}
         height={40}
-        style={{
-          enableBackground: "new 0 0 54.483 54.483",
-        }}
         viewBox="0 0 256 256"
         xmlSpace="preserve"
       >
@@ -60,7 +54,6 @@ const spokenArray = [
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
-        // className="w-6 h-6"
         width={40}
         height={40}
       >
@@ -86,9 +79,6 @@ const spokenArray = [
         width={40}
         height={40}
         viewBox="0 0 488.62 488.62"
-        style={{
-          enableBackground: "new 0 0 488.62 488.62",
-        }}
         xmlSpace="preserve"
       >
         <path d="M298.442 339.4c-15.9 5.2-32.4 7.8-49.2 7.8-42 0-81.5-16.4-111.3-46.1-29.7-29.7-46.1-69.2-46.1-111.3 0-42 16.4-81.6 46.1-111.3 29.8-29.6 69.3-46 111.3-46 20.4 0 40.3 3.9 59.2 11.5 19.5 7.9 37.1 19.6 52.1 34.6 27 27 43.2 62.7 45.7 100.7 1.9 29-4.2 57.7-17.3 83.1l21.5 21.5c17.4-28.3 27.4-61.7 27.4-97.3 0-103.1-83.5-186.6-186.6-186.6-28.5 0-55.6 6.4-79.7 17.9-63.7 29.6-107.9 94.1-107.9 169v31l-38 72.6c-9.6 18.3-.5 33.3 20.2 33.3h17.9v69c0 21.6 17.6 39.2 39.2 39.2l53.8-8 .1 53.8v.4c.3 6.9 6.1 11.5 13.3 10.2l194-34.3c7.3-1.3 13.3-8.4 13.3-15.9V385.1l-55.5-55.5c-7.6 3.9-15.5 7.2-23.5 9.8z" />
@@ -113,9 +103,6 @@ const spokenArray = [
         xmlns="http://www.w3.org/2000/svg"
         width={40}
         height={40}
-        style={{
-          enableBackground: "new 0 0 943.118 943.118",
-        }}
         xmlSpace="preserve"
         viewBox="0 0 943 943"
       >
@@ -173,17 +160,16 @@ const spokenArray = [
   },
 ];
 
-const mapChild = (param) => {
-  return param.map((item, index) => <li key={index}>{item}</li>);
+const mapChild: (param: any) => JSX.Element = (param) => {
+  return param.map((item: any, index: any) => <li key={index}>{item}</li>);
 };
 
-const mapSpoken = (param) => {
-  return param.map((item, index) => (
+const mapSpoken: (param: any) => JSX.Element = (param) => {
+  return param.map((item: any, index: any) => (
     <div
       key={index}
       className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:px-6 flex-grow justify-center"
       data-wow-duration="1s"
-      styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
     >
       <div className="py-8 px-12 mb-12 bg-white rounded-2xl shadow-2xl transform transition duration-300 ease-in-out hover:-translate-y-2">
         <div className="inline-block text-gray-900 mb-4">{item.svg}</div>
@@ -196,9 +182,9 @@ const mapSpoken = (param) => {
   ));
 };
 
-const spokenList = mapSpoken(spokenArray);
+const spokenList: JSX.Element = mapSpoken(spokenArray);
 
-const Spoken = () => {
+const Spoken: (arg: any) => JSX.Element = () => {
   return (
     <>
     <div className="container mx-auto">

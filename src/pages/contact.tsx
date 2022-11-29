@@ -1,32 +1,36 @@
 import contact from "../assets/contactform/contactformsvg.svg";
 import { useState } from "react";
 
-const Contact = () => {
+const Contact: (arg: any) => JSX.Element = () => {
 
-  const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState<String>("Submit");
 
-  const callServer = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, number, interest, description, address } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      number: number.value,
-      interest: interest.value,
-      description: description.value,
-      address: address.value
-    };
-    let response = await fetch("http://localhost:9000/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+  const handleSubmit: (e: any) => Promise<void> = async (e) => {
+    try {
+      setStatus("Sending...");
+      const { name, email, number, interest, description, address } = e.target.elements;
+      let details = {
+        name: name.value,
+        email: email.value,
+        number: number.value,
+        interest: interest.value,
+        description: description.value,
+        address: address.value
+      };
+      let response: Response = await fetch(import.meta.env.BACKEND_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+      });
+      let result: any = await response.json();
+      setStatus(result.status);
+      // alert(result.status);
+    }
+    catch {
+      setStatus("Error")
+    }
   };
 
 
@@ -38,11 +42,11 @@ const Contact = () => {
       <div className="basis-1/2  pt-10 pr-15 ">
         <div className="w-96 md:w-96 md:max-w-full  mx-auto shadow-xl">
           <div className="p-6 border border-stone-50 bg-stone-50 sm:rounded-xl ">
-            <form onSubmit={callServer}>
+            <form>
               <label className="block mb-6" htmlFor="name">
                 <span className="text-primary">Name</span>
                 <input
-                  required
+                  // required
                   name="name"
                   id="name"
                   type="text"
@@ -56,7 +60,7 @@ const Contact = () => {
               <label className="block mb-6" htmlFor="email">
                 <span className="text-primary">Email address</span>
                 <input
-                  required
+                  // required
                   name="email"
                   id="email"
                   type="email"
@@ -70,7 +74,7 @@ const Contact = () => {
               <label className="block mb-6" htmlFor="number">
                 <span className="text-primary">Phone Number</span>
                 <input
-                  required
+                  // required
                   name="number"
                   id="number"
                   type="number"
@@ -84,7 +88,7 @@ const Contact = () => {
               <label className="block mb-6" htmlFor="interest">
                 <span className="text-primary">Course of interest</span>
                 <select
-                  required
+                  // required
                   name="experience"
                   id="interest"
                   className="
@@ -112,7 +116,7 @@ const Contact = () => {
                     shadow-sm focus:border-indigo-300 focus:ring
                     focus:ring-indigo-200 focus:ring-opacity-50
                     text-neutral "
-                  rows="3"
+                  rows={3}
                 ></textarea>
               </label>
               <label className="block mb-6" htmlFor="address">
@@ -125,12 +129,13 @@ const Contact = () => {
                     shadow-sm focus:border-indigo-300 focus:ring
                     focus:ring-indigo-200 focus:ring-opacity-50
                     text-neutral "
-                  rows="3"
+                  rows={3}
                 ></textarea>
               </label>
               <div className="mb-6">
                 <button
                   type="submit"
+                  onClick={handleSubmit}
                   className="
                     h-10 px-5 text-indigo-100 bg-indigo-700
                     rounded-lg transition-colors duration-150

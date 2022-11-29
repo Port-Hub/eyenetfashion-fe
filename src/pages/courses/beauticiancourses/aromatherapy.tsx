@@ -1,4 +1,4 @@
-const Aromatherapy = () => {
+const Aromatherapy: (arg: any) => JSX.Element = () => {
   return (
     <></>
   );

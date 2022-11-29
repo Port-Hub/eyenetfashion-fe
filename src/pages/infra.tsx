@@ -1,24 +1,7 @@
 import { Link } from "react-router-dom";
-import Library from "../assets/infra/Library.jpg";
-import Material1 from "../assets/infra/Material_1.jpg";
-import Material2 from "../assets/infra/Material_2.jpg";
-import Material3 from "../assets/infra/Material_3.jpg";
-import Material4 from "../assets/infra/Material_4.jpg";
-import Material5 from "../assets/infra/Material_5.jpg";
-import Material6 from "../assets/infra/Material_6.jpg";
-import Material7 from "../assets/infra/Material_7.jpg";
-import Material8 from "../assets/infra/Material_8.jpg";
-import Lab from "../assets/infra/Lab.jpg";
-import Demo1 from "../assets/infra/Demo_1.jpg";
-import Demo2 from "../assets/infra/Demo_2.jpg";
-import Demo3 from "../assets/infra/Demo_3.jpg";
-import Demo4 from "../assets/infra/Demo_4.jpg";
-import Demo5 from "../assets/infra/Demo_5.jpg";
-import Demo6 from "../assets/infra/Demo_6.jpg";
-import Demo7 from "../assets/infra/Demo_7.jpg";
 import infrasvg from "../assets/infra/infrasvg.svg";
 
-const Infra = () => {
+const Infra: (arg: any) => JSX.Element = () => {
   return (
     <>
       <section className=" dark:text-primary">

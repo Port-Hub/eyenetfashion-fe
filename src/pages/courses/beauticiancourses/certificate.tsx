@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import certi from "../../../assets/certificate/certficate.svg";
-const Certificate = () => {
+const Certificate: (arg: any) => JSX.Element = () => {
   return (
     <>
       <div className="flex  justify-center h-full flex-wrap">

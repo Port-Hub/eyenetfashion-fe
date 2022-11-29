@@ -1,5 +1,5 @@
 import Pg2img1 from "../../../assets/beautician/Beauty_Therapy.jpg";
-const photoArray = [
+const photoArray: { title: String, points: String[] }[] = [
   {
     title: "Basics",
     points: [
@@ -55,17 +55,16 @@ const photoArray = [
     ],
   },
 ];
-const mapChild = (param) => {
-  return param.map((item, index) => <li key={index}>{item}</li>);
+const mapChild: (param: any) => any = (param) => {
+  return param.map((item: any, index: any) => <li key={index}>{item}</li>);
 };
 
-const mapPhoto = (param) => {
-  return param.map((item, index) => (
+const mapPhoto: (param: any) => any = (param) => {
+  return param.map((item: any, index: any) => (
     <div
       key={index}
       className="flex items-stretch px-4 w-100% sm:w-1/2 lg:w-1/4 lg:px-6 flex-grow justify-center"
       data-wow-duration="1s"
-      styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
     >
       <div className="py-8 px-12 mb-12 bg-white rounded-2xl shadow-2xl transform transition duration-300 ease-in-out hover:-translate-y-2">
         <div className="inline-block text-gray-900 mb-4">{item.svg}</div>
@@ -77,8 +76,8 @@ const mapPhoto = (param) => {
     </div>
   ));
 };
-const photoList = mapPhoto(photoArray);
-const Beautytherapy = () => {
+const photoList: any = mapPhoto(photoArray);
+const Beautytherapy: (arg: any) => JSX.Element = () => {
   return (
     <>
       <>

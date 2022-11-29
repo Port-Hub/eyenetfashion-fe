@@ -16,27 +16,27 @@ import Aromatherapy from "../../pages/courses/beauticiancourses/aromatherapy";
 import Certificate from "../../pages/courses/beauticiancourses/certificate";
 
 
-const mapChild = (param) => {
+const mapChild: (param: any) => any = (param) => {
     return (
-        param.map((item, index) => (
+        param.map((item: any, index: any) => (
         <li key={index}><Link to={"/"+ item.to}>{item.name}</Link></li>
             )
         )
     )
 }
-const mapRoute = (param) => {
+const mapRoute: (param: any) => any = (param) => {
         return (
-            param.map((item, index) => (
-                <Route key={index} exact path={"/"+ item.to} element={item.func}></Route>
+            param.map((item: any, index: any) => (
+                <Route key={index} path={"/"+ item.to} element={item.func as JSX.Element} />
             )
         )
     )
 }
 
-const mapParent = (param) => {
+const mapParent: (param: any) => any = (param) => {
     return (
-        param.map((item,index) => (
-        <li tabIndex="0" key={index}>
+        param.map((item: any,index: any) => (
+        <li tabIndex={0} key={index}>
             <a>
                 {item.name}
                 {Dropdown}
@@ -50,8 +50,8 @@ const mapParent = (param) => {
     )
 }
 
-const Dropdown =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
-const childArray = [
+const Dropdown: JSX.Element =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
+const childArray: { name: String, to: String, func: JSX.Element }[] = [
     {
         name:"About",
         to:"about",
@@ -78,7 +78,7 @@ const childArray = [
         func:<Workshop />
     }
     ];
-const parentArray = [
+const parentArray: { name: String, Array: { name: String, to: String, func: JSX.Element }[] }[] = [
     {
         name:"Courses Offered",
         Array:[
@@ -115,7 +115,7 @@ const parentArray = [
         ]
     }
 ]
-const extraArray = [
+const extraArray: { name: String, to: String, func: JSX.Element }[] = [
     {
         name: "Infrastructure Explore",
         to: "infrastructure/explore",
@@ -138,11 +138,11 @@ const extraArray = [
     },
   ];
 
-export const childRoute =mapRoute(childArray);
-export const parentRoute= parentArray.map((item) => mapRoute(item.Array));
-export const extraRoute = mapRoute(extraArray);
+export const childRoute: any =mapRoute(childArray);
+export const parentRoute: any[] = parentArray.map((item) => mapRoute(item.Array));
+export const extraRoute: any = mapRoute(extraArray);
 
-const Navlist = () => {
+const Navlist: (arg: any) => JSX.Element = () => {
     const childList = mapChild(childArray);
     const parentList = mapParent(parentArray);
     return (

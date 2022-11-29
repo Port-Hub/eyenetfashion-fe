@@ -5,7 +5,7 @@ import Pg1img4 from "../../assets/beautician/Parlour_Infra_2.jpg";
 import Pg1img5 from "../../assets/beautician/Parlour_Infra_3.jpg";
 import { Link } from "react-router-dom";
 
-const Beautician = () => {
+const Beautician: (arg: any) => JSX.Element = () => {
   return (
     <>
       <div className="drawer h-fit ">

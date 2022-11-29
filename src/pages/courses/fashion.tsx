@@ -8,7 +8,7 @@ import Fashion7 from "../../assets/fashion/Fashion_7.jpg"
 import Fashion8 from "../../assets/fashion/Fashion_8.jpg"
 import Fashion9 from "../../assets/fashion/Fashion_9.jpg"
 
-const Fashion = () => {
+const Fashion: (arg: any) => JSX.Element = () => {
     return (
         <>
             <h2>Courses Offered</h2>

@@ -1,7 +1,7 @@
 import Left from "../assets/about/Left.jpg";
 import Right from "../assets/about/Right.jpg";
 
-const About = () => {
+const About: (arg: any) => JSX.Element = () => {
     return (
         <div className="flex flex-row gap-x-36">
 

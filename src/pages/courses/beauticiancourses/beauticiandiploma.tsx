@@ -1,4 +1,4 @@
-const Beauticiandiploma = () =>{
+const Beauticiandiploma: (arg: any) => JSX.Element = () =>{
 
     return(<></>)
     

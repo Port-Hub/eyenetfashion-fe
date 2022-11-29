@@ -1,5 +1,5 @@
 import mulmediasvg from "../../assets/multimedia/mulmediasvg.svg"
-const multiArray = [
+const multiArray: { title: String, points: String[], extra: String, svg: JSX.Element }[] = [
   {
     title: "Level - 1",
     points: [
@@ -96,17 +96,16 @@ const multiArray = [
   },
 ];
 
-const mapChild = (param) => {
-  return param.map((item, index) => <li key={index}>{item}</li>);
+const mapChild: (param: any) => JSX.Element = (param) => {
+  return param.map((item: any, index: any) => <li key={index}>{item}</li>);
 };
 
-const mapMulti = (param) => {
-  return param.map((item, index) => (
+const mapMulti: (param: any) => JSX.Element = (param) => {
+  return param.map((item: any, index: any) => (
     <div
       key={index}
       className="flex items-stretch px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 flex-grow justify-center"
       data-wow-duration="1s"
-      styles="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;"
     >
       <div className="py-8 px-12 mb-12 bg-white rounded-2xl shadow-2xl transform transition duration-300 ease-in-out hover:-translate-y-2">
         <div className="inline-block text-gray-900 mb-4">{item.svg}</div>
@@ -122,7 +121,7 @@ const mapMulti = (param) => {
 
 const multiList = mapMulti(multiArray);
 
-const Multimedia = () => {
+const Multimedia: (arg: any) => JSX.Element = () => {
   return (
     <>
       <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10 text-center">

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer: (arg: any) => JSX.Element = () => {
     return (
         <footer className="footer p-10 bg-base-100 text-base-content">
             <div>
