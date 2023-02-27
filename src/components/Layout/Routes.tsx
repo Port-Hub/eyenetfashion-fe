@@ -16,6 +16,13 @@ import Aromatherapy from "../../pages/courses/beauticiancourses/aromatherapy";
 import Certificate from "../../pages/courses/beauticiancourses/certificate";
 
 
+interface Child 
+{ 
+    name: String, 
+    to: String, 
+    func: JSX.Element 
+}
+
 const mapChild: (param: any) => any = (param) => {
     return (
         param.map((item: any, index: any) => (
@@ -51,7 +58,7 @@ const mapParent: (param: any) => any = (param) => {
 }
 
 const Dropdown: JSX.Element =  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>;     
-const childArray: { name: String, to: String, func: JSX.Element }[] = [
+const childArray: Child[] = [
     {
         name:"About",
         to:"about",
@@ -78,7 +85,7 @@ const childArray: { name: String, to: String, func: JSX.Element }[] = [
         func:<Workshop />
     }
     ];
-const parentArray: { name: String, Array: { name: String, to: String, func: JSX.Element }[] }[] = [
+const parentArray: { name: String, Array: Child[] }[] = [
     {
         name:"Courses Offered",
         Array:[
@@ -115,7 +122,7 @@ const parentArray: { name: String, Array: { name: String, to: String, func: JSX.
         ]
     }
 ]
-const extraArray: { name: String, to: String, func: JSX.Element }[] = [
+const extraArray: Child[] = [
     {
         name: "Infrastructure Explore",
         to: "infrastructure/explore",
