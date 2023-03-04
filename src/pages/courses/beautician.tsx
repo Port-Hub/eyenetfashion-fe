@@ -4,6 +4,7 @@ import Pg1img3 from "../../assets/beautician/Parlour_Infra.jpg";
 import Pg1img4 from "../../assets/beautician/Parlour_Infra_2.jpg";
 import Pg1img5 from "../../assets/beautician/Parlour_Infra_3.jpg";
 import { Link } from "react-router-dom";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 const Beautician: (arg: any) => JSX.Element = () => {
   return (
@@ -12,7 +13,7 @@ const Beautician: (arg: any) => JSX.Element = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           <div className="container mx-auto">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-y-16">
               <div>
                 <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight pt-10">
                   <span>Best</span>{" "}
@@ -71,8 +72,18 @@ const Beautician: (arg: any) => JSX.Element = () => {
                   </label>
                 </div>
               </div>
-              <div className="self-center ">
-                <div className="carousel  max-w-sm p-4 space-x-4 bg-white rounded-box">
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+            >
+                <Masonry>
+                  <img src={Pg1img1} className="rounded-box" />
+                  <img src={Pg1img2} className="rounded-box" />
+                  <img src={Pg1img3} className="rounded-box" />
+                  <img src={Pg1img4} className="rounded-box" />
+                  <img src={Pg1img5} className="rounded-box" />
+                </Masonry>
+            </ResponsiveMasonry>
+                {/* <div className="carousel  max-w-sm p-4 space-x-4 bg-white rounded-box">
                   <div id="slide1" className="carousel-item relative w-full">
                     <img src={Pg1img1} className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -128,7 +139,7 @@ const Beautician: (arg: any) => JSX.Element = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-white rounded-box">
                   <div className="carousel-item">
                     <img src={Pg1img1} className="rounded-box" />
@@ -146,7 +157,6 @@ const Beautician: (arg: any) => JSX.Element = () => {
                     <img src={Pg1img5} className="rounded-box" />
                   </div>
                 </div> */}
-              </div>
             </div>
           </div>
         </div>
