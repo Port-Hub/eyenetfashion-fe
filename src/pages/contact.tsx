@@ -1,36 +1,80 @@
 import contact from "../assets/contactform/contactformsvg.svg";
 import { useState } from "react";
+import { createTestAccount } from "nodemailer";
+import { Mailer } from 'nodemailer-react'
 
 const Contact: (arg: any) => JSX.Element = () => {
 
   const [status, setStatus] = useState<String>("Submit");
 
-  const handleSubmit: (e: any) => Promise<void> = async (e) => {
-    try {
+  const handleSubmit: (e: any) => Promise<any> = async (e) => {
       setStatus("Sending...");
       const { name, email, number, interest, description, address } = e.target.elements;
-      let details = {
-        name: name.value,
-        email: email.value,
-        number: number.value,
-        interest: interest.value,
-        description: description.value,
-        address: address.value
-      };
-      let response: Response = await fetch(import.meta.env.BACKEND_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(details),
-      });
-      let result: any = await response.json();
-      setStatus(result.status);
-      // alert(result.status);
-    }
-    catch {
-      setStatus("Error")
-    }
+      const transport =  {
+        service: 'gmail',
+        auth: {
+            type: 'OAuth2',
+            user: process.env.MAIL_USERNAME,
+            pass: process.env.MAIL_PASSWORD,
+            clientId: process.env.OAUTH_CLIENTID,
+            clientSecret: process.env.OAUTH_CLIENT_SECRET,
+            refreshToken: process.env.OAUTH_REFRESH_TOKEN
+        }
+      }
+      let testAccount = await createTestAccount();
+
+      // create reusable transporter object using the default SMTP transport
+      // const transport = {
+      //   host: "smtp.ethereal.email",
+      //   port: 587,
+      //   secure: false, // true for 465, false for other ports
+      //   auth: {
+      //     user: testAccount.user, // generated ethereal user
+      //     pass: testAccount.pass, // generated ethereal password
+      //   },
+      // };
+
+      const defaults = {
+        from: "rahuljayaraj.25cs@licet.ac.in",
+      }
+
+      if(name && email && number && interest && description && address)
+      {
+        const mailOptions: ({ topic }: {
+          topic: any;
+      }) => {
+          subject: string;
+          body: JSX.Element;
+      } = ({ topic }) => ({
+                subject: `${topic}`,
+                body: (
+                <div>
+                    <p>Name : ${name}</p><br />
+                    <p>E-Mail : ${email}</p><br />
+                    <p>Phone : ${number}</p><br />
+                    <p>Interest : ${interest}</p><br />
+                    <p>Description : ${description}</p><br />
+                    <p>Address : ${address}</p><br />
+                </div>
+              )
+        });
+    
+        const mailer = Mailer(
+          { transport, defaults },
+          {
+            mailOptions
+          }
+        )
+
+        const info = mailer.send('mailOptions', { topic:'Response Mail' }, {
+          to: email
+        })
+        setStatus("Success");
+        console.log(info)
+      }
+      else{
+            console.log("Provide all info")
+      }
   };
 
 
